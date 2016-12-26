@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+<body>
+<div class="w-popup" style="width: 1198px; height: 685px;">
+
+    <div w-type="Data" w-id="searchBtnID"></div>
+
+    <div
+            w-type="Table" w-left="" w-right="" w-top="140" w-bottom="" w-width="100%" w-height="480"
+            w-paddingLeft="10" w-paddingRight="10" w-paddingTop="10"
+            w-id="viewInfo" w-auth="enable" w-value="在庫履歴" w-ime="" w-mode=""
+            w-list=""
+            w-rowCnt="16"
+            w-head="[{value:日時,width:150},{value:区分,width:150},{value:ステータス,width:150},{value:数量増減,width:150},{value:発送先,width:150},{value:到着先,width:150},{value:備考,width:268}]"
+            w-body="[{column:invenDate,horizontalAlign:center,width:150},{column:moveType,horizontalAlign:center,width:150},{column:status,horizontalAlign:center,width:150},{column:amount,horizontalAlign:center,width:150},{column:departure,horizontalAlign:center,width:150},{column:arrival,horizontalAlign:center,width:150},{column:note,horizontalAlign:center,width:268}]"
+            w-foot=""
+            w-event=""
+    ></div>
+
+    <div class="well" style="height: 130px;">
+        <!-- FIRST LABEL -->
+		<!--商品コード Label-->
+        <div w-type="Label" w-left="10" w-right="" w-top="10" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="商品コード" w-ime="" w-mode="" w-event=""></div>
+        <!--商品名 Label-->
+        <div w-type="Label" w-left="10" w-right="" w-top="50" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="商品名" w-ime="" w-mode="" w-event=""></div>
+        
+        <!-- FIRST INPUT -->
+        <!--商品コード TextField-->
+        <div w-type="TextField" w-left="140" w-right="" w-top="10" w-bottom="" w-width="160" w-height="30"
+             w-id="prodCode" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""></div>
+        <!--商品名 TextField-->
+        <div w-type="TextField" w-left="140" w-right="" w-top="50" w-bottom="" w-width="160" w-height="30"
+             w-id="prodName" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""></div>
+        
+        <!-- SECOND LABEL -->
+        <!--倉庫/店舗コード Label-->
+        <div w-type="Label" w-left="300" w-right="" w-top="10" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="倉庫/店舗コード" w-ime="" w-mode="" w-event=""></div>
+        <!--倉庫/店舗名 Label-->
+        <div w-type="Label" w-left="300" w-right="" w-top="50" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="倉庫/店舗名" w-ime="" w-mode="" w-event=""></div>
+        
+        <!-- SECOND INPUT -->
+        <!--倉庫/店舗コード ComboBox-->
+        <div w-type="ComboBox" w-left="430" w-right="" w-top="10" w-bottom="" w-width="160" w-height="30"
+             w-id="storCode" w-auth="enable" w-value="" w-ime="" w-mode="" 
+             w-event="{change:{process:run,compsType:all,compsDetail:[],datasType:[],datasDetail:[]}}"
+             w-keyField="key" w-dataField="data" w-nullable="" w-list=""></div>
+        <!--倉庫/店舗名 TextField-->
+        <div w-type="TextField" w-left="430" w-right="" w-top="50" w-bottom="" w-width="160" w-height="30"
+             w-id="storName" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""></div>
+        
+        <!-- THIRD LABEL -->
+        <!--全体数量 Label-->
+        <div w-type="Label" w-left="590" w-right="" w-top="10" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="全体数量" w-ime="" w-mode="" w-event=""></div>
+        <!--可用数量 Label-->
+        <div w-type="Label" w-left="590" w-right="" w-top="50" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="可用数量" w-ime="" w-mode="" w-event=""></div>
+
+        <!-- THIRD INPUT -->
+        <!--全体数量 TextField-->
+        <div w-type="TextField" w-left="720" w-right="" w-top="10" w-bottom="" w-width="160" w-height="30"
+             w-id="quantity" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""></div>
+        <!--可用数量 TextField-->
+        <div w-type="TextField" w-left="720" w-right="" w-top="50" w-bottom="" w-width="160" w-height="30"
+             w-id="availQuantity" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""></div>
+             
+		<!-- FORTH LABEL -->
+        <!--販売予定数量 Label-->
+        <div w-type="Label" w-left="880" w-right="" w-top="10" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="販売予定数量" w-ime="" w-mode="" w-event=""></div>
+        <!--仕入予定数量 Label-->
+        <div w-type="Label" w-left="880" w-right="" w-top="50" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="仕入予定数量" w-ime="" w-mode="" w-event=""></div>
+        <!--移動中数量 Label-->
+        <div w-type="Label" w-left="880" w-right="" w-top="90" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="移動中数量" w-ime="" w-mode="" w-event=""></div>
+
+        <!-- THIRD INPUT -->
+        <!--販売予定数量 TextField-->
+        <div w-type="TextField" w-left="1010" w-right="" w-top="10" w-bottom="" w-width="160" w-height="30"
+             w-id="slplAmount" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""></div>
+        <!--仕入予定数量 TextField-->
+        <div w-type="TextField" w-left="1010" w-right="" w-top="50" w-bottom="" w-width="160" w-height="30"
+             w-id="spplAmount" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""></div>
+        <!--移動中数量 TextField-->
+        <div w-type="TextField" w-left="1010" w-right="" w-top="90" w-bottom="" w-width="160" w-height="30"
+             w-id="moviAmount" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""></div>
+             
+    </div>
+    <div class="btn btn-gray"
+         w-type="Button" w-left="" w-right="10" w-top="640" w-bottom="" w-width="120" w-height="40"
+         w-id="closeBtn" w-auth="enable" w-value="閉じる" w-ime="" w-mode=""
+         w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+</div>
+
+</body>
+</html>

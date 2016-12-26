@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+    </head>
+    <body>
+
+        <div class="w-view" style="width:100%; height:100%;">
+
+            <div
+            w-type="Table" w-left="" w-right="" w-top="" w-bottom="" w-width="100%" w-height="100%"
+            w-paddingLeft="10" w-paddingRight="10" w-paddingTop="150" w-paddingBottom="10"
+            w-id="viewInfo" w-auth="enable" w-value="帳票一覧" w-ime="" w-mode=""
+            w-list=""
+            w-rowCnt="50"
+            w-head="[{value:No.,width:40},{value:詳細},{value:帳票種類,width:200},{value:帳票名,width:200},{value:表示順},{value:権限,width:300}]"
+            w-body="[{column:ROW_ID,width:40},{column:detail,type:Button,value:詳細},{column:upperNm,width:200},{column:menuNm,width:200},{column:disporder,horizontalAlign:right},{column:authList,width:300}]"
+            w-foot=""
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasType:row,datasDetail:[]}}"
+            ></div>
+
+            <div
+            w-type="Label" w-left="10" w-right="" w-top="10" w-bottom="" w-width="116" w-height="26"
+            w-id="" w-auth="enable" w-value="帳票種類" w-ime="" w-mode=""
+            w-event=""
+            ></div>
+
+            <div
+            w-type="TextField" w-left="130" w-right="" w-top="10" w-bottom="" w-width="236" w-height="26"
+            w-id="upperNm" w-auth="enable" w-value="" w-ime="" w-mode=""
+            w-event=""
+            ></div>
+
+            <div
+            w-type="Label" w-left="10" w-right="" w-top="40" w-bottom="" w-width="116" w-height="26"
+            w-id="" w-auth="enable" w-value="帳票名" w-ime="" w-mode=""
+            w-event=""
+            ></div>
+
+            <div
+            w-type="TextField" w-left="130" w-right="" w-top="40" w-bottom="" w-width="236" w-height="26"
+            w-id="menuNm" w-auth="enable" w-value="" w-ime="" w-mode=""
+            w-event=""
+            ></div>
+
+            <div
+            w-type="Button" w-left="810" w-right="" w-top="10" w-bottom="" w-width="116" w-height="56"
+            w-id="searchBtn" w-auth="enable" w-value="検索" w-ime="" w-mode=""
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+            ></div>
+
+            <div
+            w-type="Button" w-left="10" w-right="" w-top="120" w-bottom="" w-width="116" w-height="26"
+            w-id="newBtn" w-auth="enable" w-value="新規追加" w-ime="" w-mode=""
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+            ></div>
+
+        </div>
+
+    </body>
+</html>

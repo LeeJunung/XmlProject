@@ -1,0 +1,1587 @@
+/***************************************************/
+/* S:DExp */
+div[w-type=DExp] {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+div[w-type=DExp] [w-part=titleW] {
+	position: absolute;
+	display: block;
+	padding: 0 6px;
+	width: 100%;
+	height: 30px;
+	line-height: 32px;
+	color: #ffffff;
+	background: #000;
+	text-align: left;
+}
+
+div[w-type=DExp] [w-part=srchW] {
+	position: absolute;
+	display: block;
+	top: 30px;
+	width: 100%;
+	height: 30px;
+}
+
+div[w-type=DExp] [w-part=srchKey] {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding-right: 60px; /* .w-searchBtn's width */
+}
+
+div[w-type=DExp]  [w-part=srchBtn] {
+	position: absolute;
+	display: block;
+	right: 0px;
+	width: 60px;
+	height: 30px;
+}
+
+div[w-type=DExp] [w-part=contW] {
+	position: absolute;
+	display: block;
+	padding-top: 60px;
+	width: 100%;
+	height: 100%;
+}
+
+div[w-type=DExp] [w-part=cont] {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+div[w-type=DExp] [w-part=cont] > li {
+	white-space: nowrap;
+	height: 30px;
+	border: 1px solid transparent;
+	padding: 2px 6px;
+	cursor: pointer;
+}
+
+div[w-type=DExp] [w-part=cont] > li:hover {
+	border: 1px solid #CCE6FF;
+	background: #EBF5FF;
+}
+
+div[w-type=DExp] [w-part=cont] > li.w-active, div[w-type=DExp] [w-part=cont] > li.w-active:hover {
+	border: 1px solid #3F89FF;
+	background: #D0E7F7;
+}
+/* E:DExp */
+/***************************************************/
+
+/***************************************************/
+/* S:DBase02 */
+div[w-base=DBase02] {
+	width: 100%;
+	height: 100%;
+	border: 1px solid gray;
+	overflow: hidden;
+}
+
+div[w-base=DBase02] [w-part=titleW] {
+	position: absolute;
+	display: block;
+	padding: 0 6px;
+	width: 100%;
+	height: 30px;
+	line-height: 32px;
+	color: #ffffff;
+	background: #000;
+	text-align: left;
+}
+
+div[w-base=DBase02] [w-part=srchW] {
+	position: absolute;
+	display: block;
+	top: 30px;
+	width: 100%;
+	height: 30px;
+}
+
+div[w-base=DBase02] [w-part=srchKey] {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding-right: 60px; /* .w-searchBtn's width */
+}
+
+div[w-base=DBase02]  [w-part=srchBtn] {
+	position: absolute;
+	display: block;
+	right: 0px;
+	width: 60px;
+	height: 30px;
+}
+
+div[w-base=DBase02] [w-part=contW] {
+	position: absolute;
+	display: block;
+	padding-top: 60px;
+	width: 100%;
+	height: 100%;
+}
+
+div[w-base=DBase02] [w-part=cont] {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+div[w-base=DBase02] [w-part=cont] > li {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+div[w-base=DBase02] [w-part=cont] > li.w-active {
+	display: block;
+}
+/* E:DBase02 */
+/***************************************************/
+
+/***************************************************/
+/* S:DComp */
+div[w-type=DComp] [w-part=list] {
+	width: 100%;
+	height: auto;
+}
+
+div[w-type=DComp] [w-part=list] > li {
+	padding: 0 4px;
+	height: 30px;
+	line-height: 32px;
+	white-space: nowrap;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+div[w-type=DComp] [w-part=list] > li:hover {
+	border: 1px solid #CCE6FF;
+	background: #EBF5FF;
+}
+
+div[w-type=DComp] [w-part=list] > li.w-active, div[w-type=DComp] [w-part=list] > li:hover {
+	border: 1px solid #3F89FF;
+	background: #D0E7F7;
+}
+/* E:DComp */
+/***************************************************/
+
+/***************************************************/
+/* S:DAttr */
+div[w-type=DAttr] [w-part=table] {
+	width: 100%;
+	height: auto;
+}
+
+div[w-type=DAttr] [w-part=table] tr {
+	height: 30px;
+}
+
+div[w-type=DAttr] [w-part=table] tr:hover {
+	background-color: #EBF5FF;
+}
+
+div[w-type=DAttr] [w-part=table] td {
+	padding: 0 4px;
+	height: 30px;
+	vertical-align: middle;
+	border-bottom: 1px solid gray;
+	overflow: hidden;
+}
+
+div[w-type=DAttr] [w-part=table] td:first-child {
+	width: 60px;
+}
+
+div[w-type=DAttr] [w-part=table] td:last-child {
+	width: 100%;
+}
+
+div[w-type=DAttr] [w-part=table] input {
+	float: left;
+	width: 100%;
+	height: 26px;
+	color: #000000;
+	border: 1px solid gray;
+}
+
+div[w-type=DAttr] [w-part=table] input:disabled {
+	background-color: gray;
+	cursor: default;
+}
+
+div[w-type=DAttr] [w-part=table] input[w-keyType=Number] {
+	text-align: right;
+}
+/* E:DAttr */
+/***************************************************/
+
+/***************************************************/
+/* S:DEvt */
+div[w-type=DEvt] [w-part=list] {
+	width: 100%;
+	height: 100%;
+}
+
+div[w-type=DEvt] [w-part=list] li {
+	height: auto;
+	white-space: nowrap;
+	border-bottom: 1px solid #333333;
+	cursor: pointer;
+}
+
+div[w-type=DEvt] [w-part=event] {
+	width: 100%;
+	height: 30px;
+	padding: 0px 6px;
+}
+
+div[w-type=DEvt] [w-part=event] button {
+	float: right;
+	width: auto;
+	height: 30px;
+	margin-top: 2px;
+	width: 60px;
+	height: 26px;
+	line-height: normal;
+}
+
+div[w-type=DEvt] [w-part=detail] {
+	width: 100%;
+	height: 100%;
+	padding-left: 12px;
+	overflow: auto;
+}
+
+div[w-type=DEvt] [w-part=table] {
+	width: 100%;
+	height: auto;
+}
+
+div[w-type=DEvt] [w-part=table] tr {
+	height: 30px;
+}
+
+div[w-type=DEvt] [w-part=table] tr:hover {
+	background-color: #80b1ff;
+}
+
+div[w-type=DEvt] [w-part=table] td {
+	padding: 0 4px;
+	height: 30px;
+	vertical-align: middle;
+	border-bottom: 1px solid gray;
+}
+
+div[w-type=DEvt] [w-part=table] td > * {
+	width: 100%;
+	height: 26px;
+}
+
+div[w-type=DEvt] [w-part=table] td > button {
+	height: 26px;
+	line-height: normal;
+}
+
+div[w-type=DEvt] [w-part=table] tr:last-child td {
+	border-bottom: none;
+}
+
+div[w-type=DEvt] [w-part=table] td:first-child {
+	width: 80px;
+}
+
+div[w-type=DEvt] [w-part=table] td:last-child {
+	width: 100%;
+}
+/* E:DEvt */
+/***************************************************/
+
+/***************************************************/
+/* S:DNavi */
+div[w-type=DNavi] [w-part=list] {
+	width: 100%;
+	height: auto;
+}
+
+div[w-type=DNavi] [w-part=list] > li {
+	padding: 0 4px;
+	height: 30px;
+	line-height: 32px;
+	white-space: nowrap;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+div[w-type=DNavi] [w-part=list] > li:hover {
+	border: 1px solid #CCE6FF;
+	background: #EBF5FF;
+}
+
+div[w-type=DNavi] [w-part=list] > li.w-active, div[w-type=DNavi] [w-part=list] > li:hover {
+	border: 1px solid #3F89FF;
+	background: #D0E7F7;
+}
+/* E:DNavi */
+/***************************************************/
+
+/***************************************************/
+/* S:DViewRslt */
+div[w-type=DViewRslt] [w-part=cont] {
+	overflow: hidden;
+}
+
+div[w-type=DViewRslt] [w-part=pinW], div[w-type=DViewRslt] [w-part=potW] {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	padding-top: 30px;
+}
+
+div[w-type=DViewRslt] [w-part=pinW] {
+	left: 0px;
+}
+
+div[w-type=DViewRslt] [w-part=potW] {
+	right: 0px;
+}
+
+div[w-type=DViewRslt] [w-part=pinTitle], div[w-type=DViewRslt] [w-part=potTitle] {
+	position: absolute;
+	padding: 0 4px;
+	width: 50%;
+	height: 30px;
+	line-height: 32px;
+	background: #CCCCCC;
+	border: 1px solid #666666;
+}
+
+div[w-type=DViewRslt] [w-part=pinTitle] {
+	left: 0px;
+}
+
+div[w-type=DViewRslt] [w-part=potTitle] {
+	right: 0px;
+}
+
+div[w-type=DViewRslt] [w-part=pin], div[w-type=DViewRslt] [w-part=pot] {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	line-height: 32px;
+	background: #CCCCCC;
+	border: 1px solid #666666;
+	word-break: break-all;
+	resize: none;
+}
+/* E:DViewRslt */
+/***************************************************/
+
+/***************************************************/
+/* S:DApi */
+div[w-type=DApi] [w-part=apiList] {
+	width: 100%;
+	height: 100%;
+	padding: 4px;
+}
+
+div[w-type=DApi] [w-part=apiItem] {
+	width: 100%;
+	height: auto;
+}
+
+div[w-type=DApi] [w-part=func] {
+	display: block;;
+	height: 30px;
+	padding-left: 4px;
+	line-height: 32px;
+}
+
+div[w-type=DApi] [w-part=rtn] {
+	display: inline-block;
+	padding-left: 4px;
+	color: #008000;
+}
+
+div[w-type=DApi] [w-part=stat] {
+	display: inline-block;
+	padding-left: 4px;
+	color: #CD0A0A;
+}
+
+div[w-type=DApi] [w-part=full] {
+	display: inline-block;
+	padding-left: 4px;
+	font-weight: 700;
+}
+
+div[w-type=DApi] [w-part=prms] {
+	display: inline-block;
+	padding-left: 4px;
+	color: #6B00A7;
+}
+
+div[w-type=DApi] [w-part=desc] {
+	display: block;
+	padding-left: 24px;
+}
+
+div[w-type=DApi] [w-part=exam] {
+	display: block;
+	padding-left: 24px;
+	color: #00A1F1;
+}
+/* E:DApi */
+/***************************************************/
+
+/***************************************************/
+/* S:DSqlRslt */
+div[w-type=DSqlRslt] {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	border: 1px solid gray;
+	overflow: hidden;
+}
+
+div[w-type=DSqlRslt] .w-title {
+	position: absolute;
+	display: block;
+	padding: 0 6px;
+	width: 100%;
+	height: 30px;
+	line-height: 32px;
+	color: #ffffff;
+	background: #000;
+	text-align: left;
+}
+
+div[w-type=DSqlRslt] .w-content {
+	position: absolute;
+	display: block;
+	padding-top: 30px;
+	width: 100%;
+	height: 100%;
+}
+
+div[w-type=DSqlRslt] .w-btns {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 30px;
+}
+
+div[w-type=DSqlRslt] .w-cnsl {
+	position: absolute;
+	display: block;
+	padding-top: 30px;
+	width: 100%;
+	height: 100%;
+}
+
+div[w-type=DSqlRslt] ul {
+	width: 100%;
+	height: 100%;
+}
+
+div[w-type=DSqlRslt] li {
+	display: none;
+	height: 100%;
+	overflow: auto;
+}
+
+div[w-type=DSqlRslt] li.w-active {
+	display: block;
+}
+
+div[w-type=DSqlRslt] li div.w-time {
+	color: #00A721;
+}
+
+div[w-type=DSqlRslt] ul li div.w-rslt {
+	padding-bottom: 10px;
+}
+
+div[w-type=DSqlRslt] ul li div.w-rslt table thead tr th, div[w-type=DSqlRslt] ul li div.w-rslt table tbody tr td {
+	border: 1px solid #333333;
+	padding: 2px 4px;
+}
+
+div[w-type=DSqlRslt] ul li div.w-rslt table thead {
+	background: #DDDDDD;
+}
+/* E:DSqlRslt */
+/***************************************************/
+
+/***************************************************/
+/* S:DBase03 */
+div[w-base=DBase03] {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+div[w-base=DBase03] [w-part=titleW] {
+	position: absolute;
+	padding: 0 6px;
+	width: 100%;
+	height: 30px;
+	background: #000;
+	color: #ffffff;
+	text-align: left;
+	line-height: 32px;
+}
+
+div[w-base=DBase03] [w-part=btnW] {
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	width: 30px;
+	height: 30px;
+	background: #515151;
+	border-left: 1px solid #000000;
+}
+
+div[w-base=DBase03] [w-part=btn] {
+	width: 100%;
+	height: 100%;
+	background: url(images/w-icon_ddl_btn_16x16.png) no-repeat;
+	background-size: 12px;
+	background-position: 9px;
+	cursor: pointer;
+}
+
+div[w-base=DBase03] [w-part=tabW] {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	width: 100%;
+	height: 30px;
+	padding-right: 30px;
+	background: #515151;
+	color: #FFFFFF;
+}
+
+div[w-base=DBase03] [w-part=tab] {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+div[w-base=DBase03] [w-part=tab] li {
+	float: left;
+	width: auto;
+	height: 100%;
+	border-right: 1px solid #b5b5b5;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+div[w-base=DBase03] [w-part=tab] div.w-name {
+	float: left;
+	padding: 6px 10px;
+}
+
+div[w-base=DBase03] [w-part=tab] div.w-close {
+	float: right;
+	margin-top: 8px;
+	margin-right: 4px;
+	width: 16px;
+	height: 16px;
+}
+
+div[w-base=DBase03] [w-part=tab] li:hover {
+	background: #5e9cff;
+}
+
+div[w-base=DBase03] [w-part=tab] li.w-active, div[w-base=DBase03] div.w-tab li.w-active:hover {
+	background: #3f89ff;
+}
+
+div[w-base=DBase03] [w-part=tab] li.w-changed div.w-name {
+	padding-left: 16px;
+	background: url(images/w-icon_tab_changed_16x16.png) no-repeat;
+	background-size: 16px;
+	background-position: 0px 4px;
+}
+
+div[w-base=DBase03] [w-part=tab] li:hover div.w-close {
+	background: url(images/w-icon_tab_delete_16x16.png) no-repeat;
+	background-size: 12px;
+	background-position: 2px;
+}
+
+div[w-base=DBase03] [w-part=tab] li:hover div.w-close:hover {
+	background-color: #80b1ff;
+}
+
+div[w-base=DBase03] [w-part=ddlW] {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+}
+
+div[w-base=DBase03] [w-part=ddl] {
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	width: 200px;
+	height: auto;
+	max-height: 400px;
+	background: #515151;
+	border: 1px solid #000000;
+	color: #FFFFFF;
+	overflow: auto;
+}
+
+div[w-base=DBase03] [w-part=ddl] li {
+	padding: 2px 6px;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+div[w-base=DBase03] [w-part=ddl] li:hover {
+	background: #5e9cff;
+	border: 1px solid #CCE6FF;
+}
+
+div[w-base=DBase03] [w-part=ddl] li.w-active, div[w-base=DBase03] [w-part=ddl] li.w-active:hover {
+	background: #3f89ff;
+	border: 1px solid #3F89FF;
+}
+
+div[w-base=DBase03] [w-part=contW] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 60px;
+}
+
+div[w-base=DBase03] [w-part=cont] {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+div[w-base=DBase03] [w-part=cont] > li {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+div[w-base=DBase03] [w-part=cont] > li.w-active {
+	display: block;
+}
+
+div[w-base=DBase03] [w-part=cont] > li code.w-old {
+	display: none;
+}
+
+div[w-base=DBase03] [w-part=cont] > li [w-part=new] {
+	width: 100%;
+	height: 100%;
+}
+/* E:DBase03 */
+/***************************************************/
+
+/***************************************************/
+/* S:DView */
+div[w-type=DView] [w-part=viewTypeW] {
+	position: absolute;
+	display: block;
+	right: 520px;
+	width: 180px;
+	height: 30px;
+	text-align: right;
+}
+
+div[w-type=DView] [w-part=viewTypeTitle] {
+	display: inline-block;
+	width: auto;
+	height: 30px;
+	padding: 0 4px;
+	color: white;
+	line-height: 32px
+}
+
+div[w-type=DView] [w-part=viewType] {
+	display: inline-block;
+	width: auto;
+	height: 30px;
+}
+
+div[w-type=DView] [w-part=gridW] {
+	position: absolute;
+	display: block;
+	right: 380px;
+	width: 140px;
+	height: 30px;
+	text-align: right;
+}
+
+div[w-type=DView] [w-part=gridTitle] {
+	display: inline-block;
+	width: auto;
+	height: 30px;
+	padding: 0 4px;
+	color: white;
+	line-height: 32px
+}
+
+div[w-type=DView] [w-part=grid] {
+	display: inline-block;
+	width: auto;
+	height: 30px;
+}
+
+div[w-type=DView] [w-part=layoutW] {
+	position: absolute;
+	display: block;
+	right: 120px;
+	width: 260px;
+	height: 30px;
+	text-align: right;
+}
+
+div[w-type=DView] [w-part=layoutWidthTitle], div[w-type=DView] [w-part=layoutHeightTitle] {
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	padding: 0 4px;
+	color: white;
+	line-height: 32px;
+	text-align: right;
+}
+
+div[w-type=DView] [w-part=layoutWidth], div[w-type=DView] [w-part=layoutHeight] {
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	padding: 0 4px;
+	color: black;
+	text-align: right;
+}
+
+div[w-type=DView] .w-dev {
+	position: absolute;
+	display: block;
+	right: 0px;
+	width: 120px;
+	height: 30px;
+	line-height: 32px;
+	color: #ffffff;
+	background: #000;
+	text-align: right;
+}
+
+div[w-type=DView] .w-dev .w-on, div[w-type=DView] .w-dev .w-off {
+	position: absolute;
+	display: block;
+	padding: 0 6px;
+	right: 0px;
+	width: auto;
+	height: 30px;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+div[w-type=DView] .w-dev .w-on:hover, div[w-type=DView] .w-dev .w-off:hover {
+	position: absolute;
+	display: block;
+	padding: 0 6px;
+	right: 0px;
+	width: auto;
+	height: 30px;
+	cursor: pointer;
+	background: #3F89FF;
+}
+
+div[w-type=DView] .w-dev .w-off {
+	display: none;
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='10'] {
+	background: #fff url(images/w-bg_grid_10x10.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='20'] {
+	background: #fff url(images/w-bg_grid_20x20.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='30'] {
+	background: #fff url(images/w-bg_grid_30x30.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='40'] {
+	background: #fff url(images/w-bg_grid_40x40.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='50'] {
+	background: #fff url(images/w-bg_grid_50x50.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='60'] {
+	background: #fff url(images/w-bg_grid_60x60.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='70'] {
+	background: #fff url(images/w-bg_grid_70x70.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='80'] {
+	background: #fff url(images/w-bg_grid_80x80.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='90'] {
+	background: #fff url(images/w-bg_grid_90x90.png);
+}
+
+div[w-type=DView] [w-part=cont] li[w-grid='100'] {
+	background: #fff url(images/w-bg_grid_100x100.png);
+}
+
+div[w-type=DView] [w-part=cont] li .w-view, div[w-type=DView] [w-part=cont] li .w-popup {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	border-right: 1px dashed red;
+	border-bottom: 1px dashed red;
+}
+/* E:DView */
+/***************************************************/
+
+/***************************************************/
+/* S:DCtrl */
+div[w-type=DCtrl] [w-part=cont] li [w-part=new] > div {
+	width: 100%;
+	height: 100%;
+}
+/* E:DCtrl */
+/***************************************************/
+
+/***************************************************/
+/* S:DSql */
+/* E:DSql */
+/***************************************************/
+
+/***************************************************/
+/* S:DevRep */
+[w-type=DRep] [w-part=tcTitleW] {
+	width: 180px;
+	height: 30px;
+}
+
+[w-type=DRep] [w-part=tcTitle] {
+	width: 100%;
+	height: 100%;
+	padding: 0 4px;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	background: #ffffff;
+	line-height: 32px;
+	overflow: hidden;
+}
+
+[w-type=DRep] [w-part=tcW] {
+	width: 180px;
+	padding-top: 30px;
+}
+
+[w-type=DRep] [w-part=tc] {
+	width: 100%;
+	height: 100%;
+	border-right: 1px solid gray;
+	background: #ffffff;
+}
+
+[w-type=DRep] [w-part=tcTbl] {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+[w-type=DRep] [w-part=tcTbl] > li {
+	width: 100%;
+	height: auto;
+	padding-left: 30px;
+}
+
+[w-type=DRep] [w-part=tcTbl] > li > div {
+	position: relative;
+	height: 30px;
+	padding: 4px
+}
+
+[w-type=DRep] [w-part=tcTbl] > li > div > span {
+	position: absolute;
+	left: -26px;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #6B00A7;
+	border-radius: 11px;
+	color: #6B00A7;
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=tcTbl] > li > div > input {
+	position: absolute;
+	left: 4px;
+	width: 22px;
+	height: 22px;
+}
+
+[w-type=DRep] [w-part=tcTbl] > li > div > div {
+	position: absolute;
+	right: 4px;
+	width: 100%;
+	height: 22px;
+	padding-left: 34px;
+	line-height: 24px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+[w-type=DRep] [w-part=tcTbl] > li > div:hover {
+	background: #D0E7F7;
+}
+
+[w-type=DRep] [w-part=tcCol] {
+	width: 100%;
+	height: auto;
+	padding-left: 26px;
+	overflow: none;
+}
+
+[w-type=DRep] [w-part=tcCol] > li {
+	width: 100%;
+	height: auto;
+}
+
+[w-type=DRep] [w-part=tcCol] > li:first-child {
+	font-style: italic;
+}
+
+[w-type=DRep] [w-part=tcCol] > li > div {
+	position: relative;
+	height: 30px;
+	padding: 4px
+}
+
+[w-type=DRep] [w-part=tcCol] > li > div > input {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+}
+
+[w-type=DRep] [w-part=tcCol] > li > div > div {
+	position: absolute;
+	right: 4px;
+	width: 100%;
+	height: 22px;
+	padding-left: 34px;
+	line-height: 24px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+[w-type=DRep] [w-part=tcCol] > li > div:hover {
+	background: #D0E7F7;
+}
+
+[w-type=DRep] [w-part=cndTitleW] {
+	height: 30px;
+	padding-left: 180px;
+}
+
+[w-type=DRep] [w-part=cndTitle] {
+	width: 100%;
+	height: 100%;
+	padding: 0 4px;
+	border-bottom: 1px solid gray;
+	background: #ffffff;
+	line-height: 32px;
+	overflow: hidden;
+}
+
+[w-type=DRep] [w-part=cndW] {
+	padding-left: 180px;
+	padding-top: 30px;
+	padding-bottom: 180px;
+}
+
+[w-type=DRep] [w-part=cnd] {
+	width: 100%;
+	height: 100%;
+	padding: 0 4px;
+	padding-bottom: 100px;
+	background: #ffffff;
+	overflow: auto;
+}
+
+[w-type=DRep] [w-part=cnd] [w-style=title] {
+	width: 100%;
+	height: 30px;
+	background: #ffffff;
+	font-weight: bold;
+	line-height: 32px;
+	overflow: hidden;
+}
+
+[w-type=DRep] [w-part=cnd] [w-style=table] {
+	width: auto;
+	height: auto;
+}
+
+[w-type=DRep] [w-part=cnd] [w-style=table] td {
+	height: 30px;
+}
+
+[w-type=DRep] [w-part=cnd] [w-style=table] td > * {
+	height: 24px;
+	word-break: break-all;
+}
+
+[w-type=DRep] [w-part=cnd] [w-style=table] thead td {
+	border: 1px solid #000000;
+	background: #515151;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=cnd] [w-style=table] tbody tr:hover td {
+	background: #5E9CFF;
+}
+
+[w-type=DRep] [w-part=cnd] [w-style=table] tbody td {
+	border: 1px solid #000000;
+	background: #FFFFFF;
+	color: #515151;
+}
+
+[w-type=DRep] [w-part=cnd] [w-style=table] input[type=checkbox], [w-type=DRep] [w-part=cnd] [w-style=table] input[type=radio] {
+	height: 20px !important;
+	width: 100%;
+	vertical-align: middle;
+}
+
+[w-type=DRep] [w-part=deAdd] {
+	width: 26px;
+	height: 24px;
+	color: black;
+}
+
+[w-type=DRep] [w-part=deDelW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=deDel] {
+	width: 26px;
+	height: 24px;
+}
+
+[w-type=DRep] [w-part=deUpW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=deUp] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+[w-type=DRep] [w-part=deDownW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=deDown] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+[w-type=DRep] [w-part=deNo] {
+	width: 40px;
+	border: none;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=deLabel] {
+	width: 180px;
+}
+
+[w-type=DRep] [w-part=deKey] {
+	width: 180px;
+}
+
+[w-type=DRep] [w-part=deComp] {
+	width: 180px;
+}
+
+[w-type=DRep] [w-part=dePos] {
+	width: 80px;
+}
+
+[w-type=DRep] [w-part=deValTp] {
+	width: 120px;
+}
+
+[w-type=DRep] [w-part=deFix] {
+	width: 180px;
+}
+
+[w-type=DRep] [w-part=deDyna] {
+	width: 180px;
+	display: none;
+}
+
+[w-type=DRep] [w-part=deAuth] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=seAdd] {
+	width: 26px;
+	height: 24px;
+	color: black;
+}
+
+[w-type=DRep] [w-part=seDelW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=seDel] {
+	width: 26px;
+	height: 24px;
+}
+[w-type=DRep] [w-part=seUpW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=seUp] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+[w-type=DRep] [w-part=seDownW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=seDown] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+[w-type=DRep] [w-part=seNo] {
+	width: 40px;
+	border: none;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=seUseCus] {
+	width: 120px;
+}
+
+[w-type=DRep] [w-part=seCus] {
+	width: 240px;
+	display: none;
+}
+
+[w-type=DRep] [w-part=seCol] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=seAli] {
+	width: 180px;
+}
+
+[w-type=DRep] [w-part=seAgg] {
+	width: 80px;
+}
+
+[w-type=DRep] [w-part=seType] {
+	display: none;
+}
+
+[w-type=DRep] [w-part=seCast] {
+	width: 100px;
+}
+
+[w-type=DRep] [w-part=seSum] {
+	height: 20px !important;
+	width: 100%;
+	vertical-align: middle;
+}
+
+[w-type=DRep] [w-part=seVOrd] {
+	width: 60px;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=seVDis] {
+	height: 20px !important;
+	width: 100%;
+	vertical-align: middle;
+}
+
+[w-type=DRep] [w-part=seVWidth] {
+	width: 60px;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=seXOrd] {
+	width: 60px;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=seXDis] {
+	height: 20px !important;
+	width: 100%;
+	vertical-align: middle;
+}
+
+[w-type=DRep] [w-part=seXWidth] {
+	width: 60px;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=seCOrd] {
+	width: 60px;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=seCDis] {
+	height: 20px !important;
+	width: 100%;
+	vertical-align: middle;
+}
+
+[w-type=DRep] [w-part=fmTbl] {
+	width: 180px;
+}
+
+[w-type=DRep] [w-part=frAdd] {
+	width: 26px;
+	height: 24px;
+	color: black;
+}
+
+[w-type=DRep] [w-part=frDelW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=frDel] {
+	width: 26px;
+	height: 24px;
+}
+[w-type=DRep] [w-part=frUpW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=frUp] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+[w-type=DRep] [w-part=frDownW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=frDown] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+
+[w-type=DRep] [w-part=frNo] {
+	width: 40px;
+	border: none;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=frComb] {
+	width: 100px;
+}
+
+[w-type=DRep] [w-part=frTbl] {
+	width: 180px;
+}
+
+[w-type=DRep] [w-part=frAndOr] {
+	width: 80px;
+}
+
+[w-type=DRep] [w-part=frColL] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=frComp] {
+	width: 100px;
+}
+
+[w-type=DRep] [w-part=frColR] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=whAdd] {
+	width: 26px;
+	height: 24px;
+	color: black;
+}
+
+[w-type=DRep] [w-part=whDelW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=whDel] {
+	width: 26px;
+	height: 24px;
+}
+[w-type=DRep] [w-part=whUpW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=whUp] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+[w-type=DRep] [w-part=whDownW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=whDown] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+
+[w-type=DRep] [w-part=whNo] {
+	width: 40px;
+	border: none;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=whAndOr] {
+	width: 80px;
+}
+
+[w-type=DRep] [w-part=whColL] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=whComp] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=whValTp] {
+	width: 120px;
+}
+
+[w-type=DRep] [w-part=whColR] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=whInR] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=whDynaR] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=whFixR] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=grAdd] {
+	width: 26px;
+	height: 24px;
+	color: black;
+}
+
+[w-type=DRep] [w-part=grDelW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=grDel] {
+	width: 26px;
+	height: 24px;
+}
+
+[w-type=DRep] [w-part=grNo] {
+	width: 40px;
+	border: none;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=grCol] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=orAdd] {
+	width: 26px;
+	height: 24px;
+	color: black;
+}
+
+[w-type=DRep] [w-part=orDelW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=orDel] {
+	width: 26px;
+	height: 24px;
+}
+
+[w-type=DRep] [w-part=orUpW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=orUp] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+[w-type=DRep] [w-part=orDownW] {
+	text-align: center;
+}
+
+[w-type=DRep] [w-part=orDown] {
+	width: 26px;
+	height: 24px;
+	padding-left: 4px;
+}
+
+[w-type=DRep] [w-part=orNo] {
+	width: 40px;
+	border: none;
+	text-align: right;
+}
+
+[w-type=DRep] [w-part=orCol] {
+	width: 240px;
+}
+
+[w-type=DRep] [w-part=orOrder] {
+	width: 80px;
+}
+
+[w-type=DRep] [w-part=sqlW] {
+	display: none;
+	padding-left: 240px;
+	padding-top: 30px;
+	padding-bottom: 240px;
+}
+
+[w-type=DRep] [w-part=sql] {
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	-webkit-user-select: initial;
+	overflow: auto;
+}
+
+[w-type=DRep] [w-part=sql] > .CodeMirror {
+	width: 100%;
+	height: 100%;
+}
+
+[w-type=DRep] [w-part=sqlBtnW] {
+	right: 0px;
+	top: 0px;
+	width: 120px;
+	height: 30px;
+}
+
+[w-type=DRep] [w-part=sqlBtn] {
+	width: 100%;
+	height: 26px;
+}
+
+[w-type=DRep] [w-part=cnslW] {
+	left: 0px;
+	bottom: 0px;
+	height: 180px;
+	padding-left: 180px;
+	border-top: 1px solid gray;
+}
+
+[w-type=DRep] [w-part=cnsl] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+	overflow: auto;
+}
+
+[w-type=DRep] [w-part=cnslBtns] {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background: white;
+}
+
+[w-type=DRep] [w-part=cnsl] div.w-time {
+	color: #00A721;
+}
+
+[w-type=DRep] [w-part=cnsl] div.w-rslt {
+	padding-bottom: 10px;
+}
+
+[w-type=DRep] [w-part=cnsl] div.w-rslt table thead tr th, [w-type=DRep] [w-part=cnsl] div.w-rslt table tbody tr td {
+	border: 1px solid #333333;
+	padding: 2px 4px;
+}
+
+[w-type=DRep] [w-part=cnsl] div.w-rslt table thead {
+	background: #DDDDDD;
+}
+
+[w-style=none] {
+	display: none;
+	visibility: hidden;
+}
+/* E:DevRep */
+/***************************************************/
+.w-question {
+	background: url(images/w-icon_question_off.png);
+	background-size: cover;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-left: 4px;
+	margin-top: -2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.w-question:hover {
+	background: url(images/w-icon_question_on.png);
+	background-size: cover;
+}

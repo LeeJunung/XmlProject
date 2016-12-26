@@ -1,0 +1,193 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css" rel="stylesheet">
+        <link href="http://cdn.jsdelivr.net/flat-ui/2.2.2/css/flat-ui.min.css" rel="stylesheet">
+
+        <title></title><link href="/eisan/css/eisan-style.css" rel="stylesheet">
+        <style>
+			#w-login_wrp {
+				position: absolute;
+				display: block;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+			}
+
+			#w-login_wrp table {
+				width: 100%;
+				height: 100%;
+			}
+
+			#w-login_wrp table tr td {
+				text-align: center;
+			}
+
+			#w-login {
+				display: inline-block;
+				width: 240px;
+				height: 120px;
+				padding: 4px;
+				border: 3px double gray;
+				text-align: left;
+			}
+/*
+			#w-login_id {
+				margin-top: 10px;
+				width: 100%;
+				height: 26px;
+			}
+
+			#w-login_pw {
+				margin-top: 10px;
+				width: 100%;
+				height: 26px;
+			}
+
+			#w-login_btn {
+				margin-top: 4px;
+				width: 80px;
+				height: 26px;
+				float: right;
+			}
+*/
+        </style>
+
+    </head>
+
+    <body id="w-html">
+
+        <div id="w-login_wrp">
+            <table>
+                <tr>
+                    <td>
+                        <h1>EISAN ★ ERP</h1><br>
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <div class="login-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="w-login_id">
+                                    <label class="login-field-icon fui-user" for="w-login_id"></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control login-field" value="" placeholder="Password" id="w-login_pw">
+                                    <label class="login-field-icon fui-lock" for="w-login_pw"></label>
+                                </div>
+
+                                <a class="btn btn-danger btn-lg btn-block" href="#" id="w-login_btn">Log in</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+			var WI = {
+				// constant
+				C : {},
+				// variable
+				V : {},
+				// function
+				F : {},
+				// html
+				H : {},
+				// service
+				S : {}
+			};
+
+			$(function() {
+				// ------------------------------------------------------------
+				// INITIALIZE
+				// ------------------------------------------------------------
+				// hold $object with id
+				$("html").find("[id]").each(function(index, element) {
+					var $element = $(element);
+					if ($element.attr("id") && $element.attr("id").indexOf("w-") !== -1) {
+						WI.H[$element.attr("id").substring(2)] = $element;
+					}
+				});
+
+				// ------------------------------------------------------------
+				// CONSTANT
+				// ------------------------------------------------------------
+
+				// ------------------------------------------------------------
+				// VARIABLE
+				// ------------------------------------------------------------
+
+				// ------------------------------------------------------------
+				// FUNCTION
+				// ------------------------------------------------------------
+
+				// ------------------------------------------------------------
+				// HTML
+				// ------------------------------------------------------------
+				WI.H["login_pw"].keydown(function(event) {
+					if (event.keyCode === 13) {
+						var id = WI.H.login_id.val();
+						var pw = WI.H.login_pw.val();
+						WI.S.login(id, pw);
+					}
+				});
+
+				WI.H["login_btn"].click(function(event) {
+					var id = WI.H.login_id.val();
+					var pw = WI.H.login_pw.val();
+
+					WI.S.login(id, pw);
+				});
+
+				// ------------------------------------------------------------
+				// SERVICE
+				// ------------------------------------------------------------
+				WI.S['init'] = function(id, pw) {
+					WE.S.call({
+						task : "_Login.open",
+						tabId : null,
+						viewId : null,
+						comps : null,
+						datas : null
+					}, function(prm, rtn) {
+						// something notice???
+						// TODO DEL
+						WI.H.login_id.val("mss");
+						WI.H.login_pw.val("kissco");
+						//WI.H.login_btn.trigger("click");
+					});
+				};
+
+				WI.S['login'] = function(id, pw) {
+					WE.S.call({
+						task : "_Login.login",
+						tabId : null,
+						viewId : null,
+						comps : {
+							userId : {
+								value : id
+							},
+							userPw : {
+								value : pw
+							}
+						},
+						datas : null
+					}, function(prm, rtn) {
+						if (rtn.datas.loadedHtml) {
+							$("#w-main").html(rtn.datas.loadedHtml.trim());
+						}
+					});
+				};
+
+				// ------------------------------------------------------------
+				// START
+				// ------------------------------------------------------------
+				WE.F.initAll();
+				WI.S.init();
+			});
+        </script>
+    </body>
+</html>

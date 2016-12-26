@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+<body>
+<div class="w-popup" style="width: 1198px; height: 685px;">
+
+    <div w-type="Data" w-id="searchBtnID"></div>
+    <div w-type="Data" w-id="viewData"></div>
+
+    <div
+            w-type="Table" w-left="" w-right="" w-top="140" w-bottom="" w-width="100%" w-height="352"
+            w-paddingLeft="10" w-paddingRight="10" w-paddingTop="10"
+            w-id="viewInfo" w-auth="enable" w-value="新規商品移動" w-ime="" w-mode=""
+            w-list=""
+            w-rowCnt="10"
+            w-head="[{value:ステータス},{value:商品コード,width:120},{value:商品名,width:200},{value:数量},{value:単価,width:120},{value:合計,width:120},{value:備考,width:408}]"
+            w-body="[{column:prodMoveDetStatus},{column:prodCode,type:SearchField,width:120},{column:prodName,type:SearchField,width:200},{column:amount,type:TextField,ime:currency,horizontalAlign:right},{column:prodPrice,type:TextField,ime:currency,horizontalAlign:right,width:120},{column:totalPrice,ime:currency,horizontalAlign:right,width:120},{column:note,type:TextField,horizontalAlign:center,width:408}]"
+            w-foot="[{column:amount,width:524},{column:prodPrice,width:120,ime:currency},{column:totalPrice,width:120,ime:currency}]"
+            w-event="{change:{process:run,compsType:all,compsDetail:[],datasType:row,datasDetail:[]},iconClick:{process:run,compsType:all,compsDetail:[],datasDetail:[],datasType:row}}"
+    ></div>
+
+    <div class="well" style="height: 130px;">
+        <!-- FIRST LABEL -->
+        <!--商品移動ステータス Label-->
+        <div w-type="Label" w-left="10" w-right="" w-top="10" w-bottom="" w-width="150" w-height="30"
+             w-id="" w-auth="enable" w-value="商品移動ステータス" w-ime="" w-mode="" w-event=""></div>
+
+        <!-- FIRST INPUT -->
+        <!--商品移動ステータス TextField-->
+        <div w-type="ComboBox" w-left="170" w-right="" w-top="10" w-bottom="" w-width="160" w-height="30"
+             w-id="prodMoveStatus" w-auth="readonly" w-value="" w-ime="" w-mode="" w-event=""
+             w-keyField="key" w-dataField="data" w-nullable="" w-list="[{key:0,data:依頼中},{key:1,data:依頼承認},{key:2,data:依頼返上},{key:3,data:発注完了},{key:9,data:削除/取消}]"></div>
+
+
+        <!-- SECOND LABEL -->
+        <!--依頼日付 Label-->
+        <div w-type="Label" w-left="340" w-right="" w-top="10" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="依頼日付" w-ime="" w-mode="" w-event=""></div>
+        <!--依頼者コード  Label-->
+        <div w-type="Label" w-left="340" w-right="" w-top="50" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="依頼者コード" w-ime="" w-mode="" w-event=""></div>
+        <!--依頼者名 Label-->
+        <div w-type="Label" w-left="340" w-right="" w-top="90" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="依頼者名" w-ime="" w-mode="" w-event=""></div>
+
+        <!-- SECOND INPUT -->
+        <!--依頼日付 TextField-->
+        <div w-type="DateField" w-left="480" w-right="" w-top="10" w-bottom="" w-width="160" w-height="30"
+             w-id="prodMoveReqDate" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""></div>
+        <!--依頼者コード TextField-->
+        <div w-type="SearchField" w-left="480" w-right="" w-top="50" w-bottom="" w-width="160" w-height="30"
+             w-id="prodMoveReqEmplCode" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+             w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetails:[]}}"></div>
+        <!--依頼者名 TextField-->
+        <div w-type="SearchField" w-left="480" w-right="" w-top="90" w-bottom="" w-width="160" w-height="30"
+             w-id="prodMoveReqEmplName" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+             w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetails:[]}}"></div>
+             
+        <!-- THIRD LABEL -->
+        <!--出発情報 Label-->
+        <div w-type="Label" w-left="650" w-right="" w-top="10" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="出発情報" w-ime="" w-mode="" w-event=""></div>
+		<!--到着情報 Label-->
+        <div w-type="Label" w-left="650" w-right="" w-top="90" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="到着情報" w-ime="" w-mode="" w-event=""></div>
+
+        <!-- THIRD INPUT -->
+        <!--出発情報（先)-->
+        <div w-type="SearchField" w-left="790" w-right="" w-top="10" w-bottom="" w-width="130" w-height="30"
+             w-id="departure" w-auth="enable" w-value="" w-ime="" w-mode="" w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+        <!--出発情報（日付)-->
+        <div w-type="DateField" w-left="930" w-right="" w-top="10" w-bottom="" w-width="130" w-height="30"
+             w-id="departureDate" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""></div>
+        <!--到着情報（先)-->
+        <div w-type="SearchField" w-left="790" w-right="" w-top="90" w-bottom="" w-width="130" w-height="30"
+             w-id="arrival" w-auth="enable" w-value="" w-ime="" w-mode="" w-event="{iconClick:{process:run, compsType:all, compsDetail:[], dataDetail:[]}}"></div>
+        <!--到着情報（日付)-->
+        <div w-type="DateField" w-left="930" w-right="" w-top="90" w-bottom="" w-width="130" w-height="30"
+             w-id="arrivalDate" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""></div>
+    </div>
+
+    <div class="well" style=" width:1180px; height: 180px; top: 500px; position: absolute;">
+        <!--備考 LABEL-->
+        <div w-type="Label" w-left="10" w-right="" w-top="10" w-bottom="" w-width="40" w-height="30"
+             w-id="" w-auth="enable" w-value=備考 w-ime="" w-mode="" w-event=""></div>
+        <!--備考 INPUT-->
+        <div w-type="TextArea" w-left="50" w-right="" w-top="10" w-bottom="" w-width="400" w-height="100"
+             w-id="note1" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""></div>
+        <!--注釈 LABEL-->
+        <div w-type="Label" w-left="480" w-right="" w-top="10" w-bottom="" w-width="40" w-height="30"
+             w-id="" w-auth="enable" w-value=注釈 w-ime="" w-mode="" w-event=""></div>
+        <!--注釈 INPUT-->
+        <div w-type="TextArea" w-left="520" w-right="" w-top="10" w-bottom="" w-width="400" w-height="100"
+             w-id="note2" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""></div>
+
+        <div class="btn btn-yellow"
+             w-type="Button" w-left="10" w-right="" w-top="120" w-bottom="" w-width="120" w-height="50"
+             w-id="XLSBtn" w-auth="enable" w-value="XLS<br>ダウンロード" w-ime="" w-mode=""
+             w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+
+        <div class="btn btn-yellow"
+             w-type="Button" w-left="140" w-right="" w-top="120" w-bottom="" w-width="90" w-height="50"
+             w-id="printBtn" w-auth="enable" w-value="印刷" w-ime="" w-mode=""
+             w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+
+        <div class="btn btn-green"
+             w-type="Button" w-left="" w-right="110" w-top="120" w-bottom="" w-width="90" w-height="50"
+             w-id="saveBtn" w-auth="enable" w-value="保存" w-ime="" w-mode=""
+             w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+
+        <div class="btn btn-gray"
+             w-type="Button" w-left="" w-right="10" w-top="120" w-bottom="" w-width="90" w-height="50"
+             w-id="closeBtn" w-auth="enable" w-value="閉じる" w-ime="" w-mode=""
+             w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+    </div>
+</div>
+
+</body>
+</html>

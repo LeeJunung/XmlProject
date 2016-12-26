@@ -1,0 +1,75 @@
+----------++++++++++----------++++++++++----------++++++++++----------++++++++++----------++++++++++
+SAMPLE.00001        INFO      INFO MESSAGE SAMPLE
+SAMPLE.00002        WARN      WARN MESSAGE SAMPLE 
+SAMPLE.00003        ERROR     ERROR MESSAGE SAMPLE
+SYSTEM.00001        ERROR     IDとパスワードが一致しません。\r\nもう一度確認してください。
+SYSTEM.00003        ERROR     ファイル複製に失敗しました。「CODE:CTRL」
+SYSTEM.00004        ERROR     ファイル複製に失敗しました。「CODE:REP」
+SYSTEM.00005        ERROR     ファイル複製に失敗しました。「CODE:SQL」
+SYSTEM.00006        ERROR     ファイル複製に失敗しました。「CODE:VIEW」
+SYSTEM.00007        ERROR     ファイル生成に失敗しました。「CODE:CTRL」
+SYSTEM.00008        ERROR     ファイル生成に失敗しました。「CODE:REP」
+SYSTEM.00009        ERROR     ファイル生成に失敗しました。「CODE:SQL」
+SYSTEM.00010        ERROR     ファイル生成に失敗しました。「CODE:VIEW」
+SYSTEM.00011        ERROR     ファイル削除に失敗しました。「CODE:CTRL」
+SYSTEM.00012        ERROR     ファイル削除に失敗しました。「CODE:REP」
+SYSTEM.00013        ERROR     ファイル削除に失敗しました。「CODE:SQL」
+SYSTEM.00014        ERROR     ファイル削除に失敗しました。「CODE:VIEW」
+SYSTEM.00015        ERROR     ファイル読込に失敗しました。「CODE:REP」
+SYSTEM.00017        ERROR     ファイル読込に失敗しました。「CODE:SQL」
+SYSTEM.00018        ERROR     ファイル読込に失敗しました。「CODE:VIEW」
+SYSTEM.00019        ERROR     ファイル名変更に失敗しました。「CODE:CTRL」
+SYSTEM.00020        ERROR     ファイル名変更に失敗しました。「CODE:REP」
+SYSTEM.00021        ERROR     ファイル名変更に失敗しました。「CODE:SQL」
+SYSTEM.00022        ERROR     ファイル名変更に失敗しました。「CODE:VIEW」
+SYSTEM.00023        ERROR     ファイル生成に失敗しました。「CODE:CTRL」
+SYSTEM.00024        ERROR     ファイル生成に失敗しました。「CODE:REP」
+SYSTEM.00025        ERROR     ファイル生成に失敗しました。「CODE:SQL」
+SYSTEM.00026        ERROR     ファイル生成に失敗しました。「CODE:VIEW」
+SYSTEM.00027        ERROR     ファイルリリースに失敗しました。「CODE:CTRL」
+SYSTEM.00028        ERROR     ファイルリリースに失敗しました。「CODE:REP」
+SYSTEM.00029        ERROR     ファイルリリースに失敗しました。「CODE:SQL」
+SYSTEM.00030        ERROR     ファイルリリースに失敗しました。「CODE:VIEW」
+SYSTEM.00031        ERROR     DB実行に失敗しました。\r\n{@detail@}
+SYSTEM.00032        ERROR     パラメータが存在しません。\r\n{@detail@}
+SYSTEM.00033        ERROR     対象帳票を選択してください。
+SYSTEM.00034        ERROR     設定に誤りがあります。\r\n{@detail@}
+SYSTEM.10001        ERROR     該当画面が存在しません。\r\nVIEW:{@detail@}
+SYSTEM.10002        ERROR     該当画面が存在しません。\r\nCLASS:{@detail@}
+SYSTEM.10003        ERROR     該当画面が存在しません。\r\nMETHOD:{@detail@}
+SYSTEM.10004        ERROR     一定時間利用してなかったので、セッションタイムアウトになりました。\r\nログアウトをしてから、再度ログインしてください。
+SYSTEM.10005        ERROR     サーバーの以上により接続情報を失いました。\r\nログアウトをしてから、再度ログインしてください。
+SYSTEM.10006        ERROR     セッションが異常状態です。\r\nログアウトをしてから、再度ログインしてください。
+SYSTEM.10007        ERROR     システム異常状態です。\r\nシステム管理者に問い合わせしてください。\r\n{@detail@}
+SYSTEM.10008        ERROR     [{@item@}]を入力してください。
+SYSTEM.20111        ERROR     [検索条件設定(No="{@no@}")] <条件名称>を入力してください。
+SYSTEM.20121        ERROR     [検索条件設定(No="{@no@}")] <ＩＤ>を入力してください。
+SYSTEM.20131        ERROR     [検索条件設定(No="{@no@}")] <条件入力形式>を選択してください。
+SYSTEM.20141        ERROR     [検索条件設定(No="{@no@}")] <表示位置>を選択してください。
+SYSTEM.20211        ERROR     [表示項目(No="{@no@}")] <内容>を選択してください。
+SYSTEM.20212        ERROR     [表示項目(No="{@no@}")] <内容>を入力してください。
+SYSTEM.20221        ERROR     [表示項目(No="{@no@}")] <表示タイトル>を入力してください。
+SYSTEM.20311        ERROR     [テーブル結合] <主テーブル>を選択してください。
+SYSTEM.20321        ERROR     [テーブル結合(No="{@no@}")] <結合方法>を選択してください。
+SYSTEM.20331        ERROR     [テーブル結合(No="{@no@}")] <副テーブル>を選択してください。
+SYSTEM.20341        ERROR     [テーブル結合(No="{@no@}")] <テーブル.項目（左）>を選択してください。
+SYSTEM.20351        ERROR     [テーブル結合(No="{@no@}")] <比較方法>を選択してください。
+SYSTEM.20361        ERROR     [テーブル結合(No="{@no@}")] <テーブル.項目（右）>を選択してください。
+SYSTEM.20411        ERROR     [検索条件定義(No="{@no@}")] <及び・又は>を選択してください。
+SYSTEM.20421        ERROR     [検索条件定義(No="{@no@}")] <検索対象項目>を選択してください。
+SYSTEM.20431        ERROR     [検索条件定義(No="{@no@}")] <条件>を選択してください。
+SYSTEM.20451        ERROR     [検索条件定義(No="{@no@}")] <内容>を選択してください。
+SYSTEM.20452        ERROR     [検索条件定義(No="{@no@}")] <内容>を入力してください。
+SYSTEM.20511        ERROR     [検索条件定義(No="{@no@}")] <整列対象項目>を選択してください。
+SYSTEM.20521        ERROR     [検索条件定義(No="{@no@}")] <整列方向>を選択してください。
+
+SYSTEM.30101        INFO      登録完了しました。
+SYSTEM.30102        INFO      修正完了しました。
+SYSTEM.30103        INFO      削除完了しました。
+SYSTEM.30104        INFO      承認完了しました。
+SYSTEM.30105        INFO      承認返上しました。
+SYSTEM.30106        ERROR     情報を確認して下さい。
+SYSTEM.30107        ERROR     得意先コードと得意先名を入力して下さい。
+SYSTEM.30108        ERROR     得意先情報を確認して下さい。
+SYSTEM.30109        ERROR     仕入先コードと得意先名を入力して下さい。
+SYSTEM.30110        ERROR     仕入先情報を確認して下さい。

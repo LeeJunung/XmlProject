@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../system/config/Config.xsd">
+	<!-- <env> -->
+	<!-- <dbType>mysql</dbType> -->
+	<!-- <dbHost>192.168.1.200:3333</dbHost> -->
+	<!-- <dbName>we</dbName> -->
+	<!-- <dbUser>we</dbUser> -->
+	<!-- <dbPass>we$2015</dbPass> -->
+	<!-- <sessionMin>15</sessionMin> -->
+	<!-- <transactionMin>15</transactionMin> -->
+	<!-- <ajaxMin>15</ajaxMin> -->
+	<!-- </env> -->
+	<!-- <env> -->
+	<!-- <dbType>oracle</dbType> -->
+	<!-- <dbHost>192.168.1.192:1521:XE</dbHost> -->
+	<!-- <dbName>WE</dbName> -->
+	<!-- <dbUser>we</dbUser> -->
+	<!-- <dbPass>we$2014</dbPass> -->
+	<!-- <sessionMin>15</sessionMin> -->
+	<!-- </env> -->
+	<env>
+		<dbType>sqlserver</dbType>
+		<dbHost>192.168.1.200\EISAN:64555</dbHost>
+		<dbName>EISAN</dbName>
+		<dbUser>eisan</dbUser>
+		<dbPass>eisan$2016</dbPass>
+		<sessionMin>15</sessionMin>
+		<transactionMin>1</transactionMin>
+		<ajaxMin>1</ajaxMin>
+	</env>
+</config>

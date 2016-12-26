@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title></title>
+</head>
+
+<body>
+
+<div class="w-view">
+	
+	<div
+			w-type="Table" w-left="" w-right="" w-top="180" w-bottom="" w-width="100%" w-height="575"
+			w-paddingLeft="10" w-paddingRight="10" w-paddingTop="" w-paddingBottom="10"
+			w-id="viewInfo" w-auth="enable" w-value="出荷管理" w-ime="" w-mode=""
+			w-list=""
+			w-rowCnt="20"
+			w-head="[{value:出荷ステータス},{value:出荷日時},{value:受注日時},{value:受注番号},{value:得意先コード},{value:得意先名},{value:得意先担当者},{value:受注当者コード},{value:受注担当者名},{value:備考}]"
+			w-body="[{column:shipStatus,horizontalAlign:center},{column:shipDate,horizontalAlign:center},{column:orderDate,horizontalAlign:center},{column:orderNum,horizontalAlign:center},{column:custCode,horizontalAlign:center},{column:custName,horizontalAlign:center},{column:custManager,horizontalAlign:center},{column:emplCode,horizontalAlign:center},{column:emplName,horizontalAlign:center},{column:note1,horizontalAlign:center}]"
+			w-foot=""
+			w-event="{click:{process:run,compsType:all,compsDetail:[],datasType:row,datasDetail:[]}}"
+	></div>
+	
+	<div class="well" style="margin-top: 10px; height: 140px;">
+		
+		<!-- FIRST LABEL -->
+		<!--出荷ステータス Label-->
+		<div w-type="Label" w-left="10" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="出荷ステータス" w-ime="" w-mode="" w-event=""></div>
+		<!--出荷日付 Label-->
+		<div w-type="Label" w-left="10" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="出荷日付" w-ime="" w-mode="" w-event=""></div>
+		<!--発注日付 Label-->
+		<div w-type="Label" w-left="10" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受注日付" w-ime="" w-mode="" w-event=""></div>
+		
+		<!-- FIRST INPUT -->
+		<!--出荷ステータス ComboBox-->
+		<div w-type="ComboBox" w-left="150" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="shipStatus" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""
+		     w-keyField="key" w-dataField="data" w-nullable=""
+		     w-list="[{key:0,data:出荷前},{key:1,data:出荷中},{key:2,data:出荷完了}]"></div>
+		<!--出荷日付 START-->
+		<div w-type="DateField" w-left="150" w-right="" w-top="60" w-bottom="" w-width="110" w-height="30"
+		     w-id="shipDateStart" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		<!--出荷日付 Label-->
+		<div w-type="Label" w-left="260" w-right="" w-top="60" w-bottom="" w-width="30" w-height="30"
+		     w-id="" w-auth="enable" w-value="~" w-ime="" w-mode="" w-event=""></div>
+		<!--出荷日付 END-->
+		<div w-type="DateField" w-left="290" w-right="" w-top="60" w-bottom="" w-width="110" w-height="30"
+		     w-id="shipDateEnd" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		<!--発注日付 START-->
+		<div w-type="DateField" w-left="150" w-right="" w-top="100" w-bottom="" w-width="110" w-height="30"
+		     w-id="orderDateStart" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		<!--発注日付 Label-->
+		<div w-type="Label" w-left="260" w-right="" w-top="100" w-bottom="" w-width="30" w-height="30"
+		     w-id="" w-auth="enable" w-value="~" w-ime="" w-mode="" w-event=""></div>
+		<!--発注日付 END-->
+		<div w-type="DateField" w-left="290" w-right="" w-top="100" w-bottom="" w-width="110" w-height="30"
+		     w-id="orderDateEnd" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		
+		<!-- SECOND LABEL -->
+		<!--発注番号 Label-->
+		<div w-type="Label" w-left="450" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受注番号" w-ime="" w-mode="" w-event=""></div>
+		<!--発注担当者コード Label-->
+		<div w-type="Label" w-left="450" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受注担当者コード" w-ime="" w-mode="" w-event=""></div>
+		<!--発注担当者名 Label-->
+		<div w-type="Label" w-left="450" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受注担当者名" w-ime="" w-mode="" w-event=""></div>
+		
+		<!-- SECOND INPUT -->
+		<!--発注番号 TextField-->
+		<div w-type="TextField" w-left="590" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="orderNum" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-event=""></div>
+		<!--発注担当者コード TextField-->
+		<div w-type="SearchField" w-left="590" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="emplCode" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+		<!--発注担当者名 TextField-->
+		<div w-type="SearchField" w-left="590" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+		     w-id="emplName" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+		
+		<!-- THIRD LABEL -->
+		<!--得意先コード Label-->
+		<div w-type="Label" w-left="750" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="得意先コード" w-ime="" w-mode="" w-event=""></div>
+		<!--得意先名 Label-->
+		<div w-type="Label" w-left="750" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="得意先名" w-ime="" w-mode="" w-event=""></div>
+		<!--得意先担当者 Label-->
+		<div w-type="Label" w-left="750" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="得意先担当者" w-ime="" w-mode="" w-event=""></div>
+		
+		<!-- THIRD INPUT -->
+		<!--得意先コード TextField-->
+		<div w-type="SearchField" w-left="890" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="custCode" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+		<!--得意先名 TextField-->
+		<div w-type="SearchField" w-left="890" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="custName" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+		<!--得意先担当者 TextField-->
+		<div w-type="TextField" w-left="890" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+		     w-id="custManager" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-event=""></div>
+	
+	</div>
+	
+	<div class="btn btn-yellow"
+	     w-type="Button" w-left="" w-right="20" w-top="100" w-bottom="" w-width="110" w-height="40"
+	     w-id="searchBtn" w-auth="enable" w-value="検索" w-ime="" w-mode=""
+	     w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+</div>
+
+</body>
+</html>

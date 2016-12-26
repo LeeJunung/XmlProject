@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <div
+        class="w-view">
+
+            <div
+            w-type="DRepEdit" w-left="0" w-top="0" w-width="100%" w-height="100%"
+            w-id="edit" w-auth="enable"
+            ></div>
+
+        </div>
+
+        <script>
+			$('body').off('_D_000011').on('_D_000011', function(event, tabId, viewId) {
+				console.log('[-----init-----] tabId:' + tabId + ' viewId:' + viewId + ' loaded.');
+
+				$base = $('div[id="BASE_' + tabId + '_' + viewId + '"]');
+
+				// ------------------------------------------------------------
+				// S: Variable
+				var edit = $base.find('div[w-id="edit"]');
+				// E: Variable
+				// ------------------------------------------------------------
+
+				// ------------------------------------------------------------
+				// S: Function
+				var newFile = function(datas) {
+					WE.S.call({
+						task : viewId + '.newFile',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+
+				var copyFile = function(datas) {
+					WE.S.call({
+						task : viewId + '.copyFile',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+
+				var renameFile = function(datas) {
+					WE.S.call({
+						task : viewId + '.renameFile',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+
+				var deleteFile = function(datas) {
+					WE.S.call({
+						task : viewId + '.deleteFile',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+
+				var saveFile = function(datas) {
+					WE.S.call({
+						task : viewId + '.saveFile',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+
+				var releaseFile = function(datas) {
+					WE.S.call({
+						task : viewId + '.releaseFile',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+
+				var openFile = function(datas) {
+					WE.S.call({
+						task : viewId + '.openFile',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+
+				var closeFile = function(datas) {
+					WE.S.call({
+						task : viewId + '.closeFile',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+
+				var executeSql = function(datas) {
+					WE.S.call({
+						task : viewId + '.executeSql',
+						tabId : tabId,
+						viewId : viewId,
+						comps : null,
+						datas : datas
+					});
+				};
+				// E: Function
+				// ------------------------------------------------------------
+
+				// ------------------------------------------------------------
+				// S: Binding
+				edit.on('w-newFile', function(event, data) {
+					newFile(data);
+				}).on('w-copyFile', function(event, data) {
+					copyFile(data);
+				}).on('w-renameFile', function(event, data) {
+					renameFile(data);
+				}).on('w-deleteFile', function(event, data) {
+					deleteFile(data);
+				}).on('w-saveFile', function(event, data) {
+					saveFile(data);
+				}).on('w-releaseFile', function(event, data) {
+					releaseFile(data);
+				}).on('w-openFile', function(event, data) {
+					openFile(data);
+				}).on('w-closeFile', function(event, data) {
+					closeFile(data);
+				}).on('w-executeSql', function(event, data) {
+					executeSql(data);
+				});
+				// E: Binding
+				// ------------------------------------------------------------
+			});
+        </script>
+    </body>
+</html>

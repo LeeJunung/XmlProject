@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+    </head>
+    <body>
+
+        <div
+        class="w-popup" style="width: 356px; height: 240px;">
+
+            <div
+            w-type="Data"
+            w-id="editId"
+            ></div>
+
+            <div
+            w-type="Data"
+            w-id="srcMenuId"
+            ></div>
+
+            <div
+            w-type="Label" w-left="0" w-top="0" w-width="116"
+            w-value="複写元帳票名"
+            ></div>
+
+            <div
+            w-type="TextField" w-left="120" w-top="0" w-width="236"
+            w-id="srcMenuName" w-auth="readonly"
+            ></div>
+
+            <div
+            w-type="Label" w-left="0" w-top="30" w-width="116"
+            w-value="帳票種類"
+            ></div>
+
+            <div
+            w-type="ComboBox" w-left="120" w-top="30" w-width="236"
+            w-id="menuUpperId" w-auth="enable" w-value="R01"
+            w-keyField="menuId" w-dataField="menuName"
+            ></div>
+
+            <div
+            w-type="Label" w-left="0" w-top="60" w-width="116"
+            w-value="帳票名"
+            ></div>
+
+            <div
+            w-type="TextField" w-left="120" w-top="60" w-width="236"
+            w-id="menuName" w-auth="enable"
+            ></div>
+
+            <div
+            w-type="Label" w-left="0" w-top="90" w-width="116"
+            w-value="表示順"
+            ></div>
+
+            <div
+            w-type="TextField" w-left="120" w-top="90" w-width="236"
+            w-id="menuDisporder" w-auth="enable" w-ime="numeric"
+            w-maxLength="4" w-horizontalAlign="right"
+            ></div>
+
+            <div
+            w-type="Label" w-left="0" w-top="120" w-width="116"
+            w-value="権限"
+            ></div>
+
+            <div
+            w-type="CheckGroup" w-left="120" w-top="120" w-width="236"
+            w-height="56"
+            w-id="authidlist" w-auth="enable" w-value="1"
+            w-keyField="authId" w-dataField="authId"
+            ></div>
+
+            <div
+            w-type="Button" w-right="100" w-top="210" w-id="okBtn"
+            w-auth="enable" w-value="実行"
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+            ></div>
+
+            <div
+            w-type="Button" w-right="0" w-top="210" w-id="closeBtn"
+            w-auth="enable" w-value="取消"
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+            ></div>
+
+        </div>
+
+    </body>
+</html>

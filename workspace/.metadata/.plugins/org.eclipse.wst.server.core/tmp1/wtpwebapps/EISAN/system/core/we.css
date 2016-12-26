@@ -1,0 +1,674 @@
+
+#wi-body_wrp {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+}
+
+#wi-body {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#wi-main_wrp {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 208px; /* wi-navi:width + wi-navi_sld:width */
+}
+
+#wi-main {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#wi-tab_area {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0px;
+    height: 30px;
+    background: #515151;
+}
+
+#wi-tab_set_wrp {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+#wi-tab_set {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#wi-tab_set li {
+    height: 100%;
+    float: left;
+    padding: 6px 4px 0 4px;
+    white-space: nowrap;
+    color: #ffffff;
+    background: #515151;
+    border-right: 1px solid #b5b5b5;
+}
+
+#wi-tab_set li:hover {
+    color: #ffffff;
+    background: #5e9cff;
+}
+
+#wi-tab_set .wi-tab_title {
+    float: left;
+    padding-right: 10px;
+}
+
+#wi-tab_set .wi-tab_refresh {
+    float: left;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+}
+
+#wi-tab_set .wi-tab_delete {
+    float: right;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+}
+
+#wi-tab_set .wi-tab_active, #wi-tab_set .wi-tab_active:hover {
+    color: #ffffff;
+    background: #3f89ff;
+}
+
+#wi-tab_set li:hover .wi-tab_refresh {
+    background: url(images/w-icon_refresh_16x16.png) no-repeat;
+    background-size: 12px;
+    background-position: 2px;
+}
+
+#wi-tab_set li:hover .wi-tab_refresh:hover {
+    background-color: #80b1ff;
+}
+
+#wi-tab_set li:hover .wi-tab_delete {
+    background: url(images/wi-icon_tab_delete_16x16.png) no-repeat;
+    background-size: 12px;
+    background-position: 2px;
+}
+
+#wi-tab_set li:hover .wi-tab_delete:hover {
+    background-color: #80b1ff;
+}
+
+#wi-list_set_wrp {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 100%;
+    right: 0px;
+}
+
+#wi-list_set_btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(images/wi-icon_tab_list_16x16.png) no-repeat;
+    background-size: 12px;
+    background-position: 9px;
+    border-left: 1px solid #000000;
+}
+
+#wi-list_set_btn:hover {
+    background-color: #80b1ff;
+}
+
+#wi-list_set_btn.pressed, #wi-list_set_btn.pressed:hover {
+    background-color: #3f89ff;
+}
+
+#wi-stg_wrp {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+#wi-stg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#wi-view_set_wrp {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#wi-view_set {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #b5b5b5;
+}
+
+#wi-view_set > div {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#wi-view_set > div.wi-view_active {
+    display: block;
+    background: white;
+}
+
+#wi-view_set .wi-view {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+}
+
+#wi-navi {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 100%;
+}
+
+#wi-exp_wrp {
+    position: absolute;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#wi-exp {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background: #515151;
+    overflow: auto;
+}
+
+#wi-exp ul {
+    padding-left: 20px;
+}
+
+#wi-exp ul:first-child {
+    padding-left: 0px;
+}
+
+#wi-exp li {
+    white-space: nowrap;
+}
+
+#wi-exp .group {
+    border: none;
+    width: auto;
+    padding: 6px 0;
+    padding-left: 20px;
+    background: url(images/w-icon_triangle_close_16x16.png) no-repeat;
+    background-size: 16px;
+    background-position: 2px 9px;
+    cursor: pointer;
+}
+
+#wi-exp .open {
+    background: url(images/w-icon_triangle_open_16x16.png) no-repeat;
+    background-size: 16px;
+    background-position: 2px 9px;
+}
+
+#wi-exp .none {
+    background: url(images/w-icon_triangle_none_16x16.png) no-repeat;
+    background-size: 16px;
+    background-position: 2px 9px;
+    cursor: default;
+}
+
+#wi-exp .group .icon {
+    padding-left: 22px;
+    background: url(images/w-icon_group_16x16.png) no-repeat;
+    background-size: 16px;
+    background-position: 2px 3px;
+}
+
+#wi-exp .menu {
+    border: none;
+    width: auto;
+    padding: 6px 0;
+    padding-left: 20px;
+    /*background: url(images/wi-icon_file_16x16.png) no-repeat;
+     background-size: 16px;
+     background-position: 5px;*/
+    cursor: pointer;
+}
+
+#wi-exp .menu .icon {
+    padding-left: 22px;
+    background: url(images/w-icon_menu_16x16.png) no-repeat;
+    background-size: 16px;
+    background-position: 2px 2px;
+}
+
+#wi-exp .group.selected, #wi-exp .menu.selected {
+    background-color: #5e9cff;
+}
+
+#wi-navi_title_wrp {
+    position: absolute;
+    display: block;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+}
+
+#wi-navi_title {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#wi-navi_title_txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 8px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #2C2C2C;
+    border-bottom: 1px solid #FFFFFF;
+    overflow: hidden;
+}
+
+#wi-navi_title_btn {
+    position: absolute;
+    display: block;
+    right: 2px;
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    /*border: 1px solid red;*/
+    border-radius: 4px;
+    background: url(images/w-icon_reload_16x16.png) no-repeat center;
+    background-size: 22px;
+    background-position: 1px -1px;
+}
+
+#wi-navi_title_btn:hover {
+    background-color: #ffffff;
+}
+
+#wi-navi_sld {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 8px;
+    height: 100%;
+    left: 200px;
+    border-left: 1px solid #515151;
+    border-right: 1px solid #515151;
+    background: #ffffff;
+    cursor: e-resize;
+}
+
+#wi-head {
+    position: absolute;
+    display: block;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #b5b5b5;
+    background: rgb(247, 247, 247);
+}
+
+#wi-head ul {
+    padding: 0 4px;
+    width: 100%;
+    height: 100%;
+}
+
+#wi-head ul li {
+    float: left;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#wi-logo {
+    padding-left: 6px;
+    float: left;
+    font-family: Meiryo, 'MS Mincho', Verdana, sans-serif;
+    font-weight: 700;
+    /*line-height: 30px;*/
+    color: #000000;
+    text-shadow: 1px 1px 1px #999999, 3px 3px 3px #aaaaaa;
+}
+
+#wi-logo a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+#wi-logo:hover {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #999999, 3px 3px 3px #000000;
+}
+
+#wi-user_name {
+    line-height: 30px;
+}
+
+#wi-time {
+    line-height: 30px;
+}
+
+#wi-help_btn {
+    margin-right: 4px;
+    padding: 0 10px;
+    width: auto;
+}
+
+#wi-manual_btn {
+    margin-right: 4px;
+    padding: 0 10px;
+    width: auto;
+}
+
+/*#wi-exit_btn {*/
+    /*padding: 0 20px;*/
+    /*width: auto;*/
+/*}*/
+
+/*#wi-noti_btn {*/
+    /*padding: 0 20px;*/
+    /*width: auto;*/
+/*}*/
+
+#wi-foot {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    font-family: Meiryo, 'MS Mincho', Verdana, sans-serif;
+    border-top: 1px solid #b5b5b5;
+    background: rgb(247, 247, 247);
+    line-height: 30px;
+    text-align: center;
+}
+
+#wi-context {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#wi-context_list_set {
+    position: absolute;
+    display: none;
+    top: 60px; /* header:height + tab-area:height */
+    right: 0px;
+    width: auto;
+    min-width: 160px;
+    height: auto;
+    color: #ffffff;
+    background: rgb(81, 81, 81);
+    border-top: 1px solid #000000;
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+#wi-context_list_set li {
+    padding: 6px 8px;
+    white-space: nowrap;
+}
+
+#wi-context_list_set li:hover {
+    background: #5e9cff;
+}
+
+#wi-context_exp_menu {
+    position: absolute;
+    display: none;
+    width: auto;
+    min-width: 160px;
+    height: auto;
+    color: #ffffff;
+    background: rgb(81, 81, 81);
+    border: 1px solid #000000;
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+#wi-context_exp_menu li {
+    padding: 6px 8px;
+    white-space: nowrap;
+}
+
+#wi-context_exp_menu li:hover {
+    background: #5e9cff;
+}
+
+#wi-popup {
+    position: absolute;
+    display: none;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#wi-popup > table {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(81, 81, 81, .5);
+}
+
+#wi-popup div.popup {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    border: 3px double rgb(81, 81, 81);
+    background-color: #ffffff;
+}
+
+#wi-popup div.title {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    padding-left: 4px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+    background-color: #515151;
+    cursor: pointer;
+}
+
+#wi-popup div.title button.w-close {
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: url(images/wi-icon_popup_close_16x16.png) no-repeat;
+    background-size: 12px;
+    background-position: 9px;
+}
+
+#wi-popup div.body {
+    padding: 6px;
+}
+
+#wi-login_wrp {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+#wi-login_wrp table {
+    width: 100%;
+    height: 100%;
+}
+
+#wi-login_wrp table tr td {
+    text-align: center;
+}
+
+#wi-login {
+    display: inline-block;
+    width: 240px;
+    height: 120px;
+    padding: 4px;
+    border: 3px double gray;
+    text-align: left;
+}
+
+#wi-login_id {
+    margin-top: 10px;
+    width: 100%;
+    height: 26px;
+}
+
+#wi-login_pw {
+    margin-top: 10px;
+    width: 100%;
+    height: 26px;
+}
+
+#wi-login_btn {
+    margin-top: 4px;
+    width: 80px;
+    height: 26px;
+    float: right;
+}
+
+/* COMMON */
+.wi-btn {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #b5b5b5;
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%,
+    rgba(246, 246, 246, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,
+    255, 255, 1)), color-stop(50%, rgba(241, 241, 241, 1)),
+    color-stop(51%, rgba(225, 225, 225, 1)),
+    color-stop(100%, rgba(246, 246, 246, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%,
+    rgba(246, 246, 246, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%,
+    rgba(246, 246, 246, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%,
+    rgba(246, 246, 246, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%,
+    rgba(246, 246, 246, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+    endColorstr='#f6f6f6', GradientType=0); /* IE6-9 */
+}
+
+.wi-btn:hover {
+    border: 1px solid #b5b5b5;
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(214, 214, 214, 1) 51%,
+    rgba(255, 255, 255, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,
+    255, 255, 1)), color-stop(50%, rgba(241, 241, 241, 1)),
+    color-stop(51%, rgba(214, 214, 214, 1)),
+    color-stop(100%, rgba(255, 255, 255, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(214, 214, 214, 1) 51%,
+    rgba(255, 255, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(214, 214, 214, 1) 51%,
+    rgba(255, 255, 255, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(214, 214, 214, 1) 51%,
+    rgba(255, 255, 255, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 50%, rgba(214, 214, 214, 1) 51%,
+    rgba(255, 255, 255, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+    endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+}
+
+.wi-line_vertical {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid gray;
+}
+
+.wi-space_vertical {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 0;
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid transparent;
+}
+
+.w-help {
+    background: url(images/w-icon_question_off.png);
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin-top: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.w-help:hover {
+    background: url(images/w-icon_question_on.png);
+    background-size: cover;
+}

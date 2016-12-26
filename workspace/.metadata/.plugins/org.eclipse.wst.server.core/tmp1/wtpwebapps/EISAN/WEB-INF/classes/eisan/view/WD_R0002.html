@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+    </head>
+    <body>
+
+        <div
+        class="w-view">
+
+            <div
+            w-type="Table" w-left="0" w-top="0" w-width="100%"
+            w-height="100%" w-paddingLeft="10" w-paddingRight="10"
+            w-paddingTop="150" w-paddingBottom="10" w-id="tblInfo"
+            w-auth="enable" w-value="帳票テーブル一覧" w-rowCnt="50"
+            w-head="[{value:No.,width:40},{value:詳細},{value:テーブル名,width:160},{value:テーブル表示名,width:160},{value:表示順,width:100},{value:権限,width:200},{value:更新日時,width:180},{value:更新ユーザー,width:100}]"
+            w-body="[{column:ROW_ID,width:40},{column:detail,type:Button,value:詳細},{column:tblname,width:160,horizontalAlign:left},{column:tbldispname,width:160,horizontalAlign:left},{column:tbldisporder,width:100,horizontalAlign:right},{column:tblauthidlist,width:200,horizontalAlign:left},{column:upddttm,width:180,horizontalAlign:center},{column:updid,width:100,horizontalAlign:left}]"
+            w-foot=""
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasType:row,datasDetail:[]}}"
+            ></div>
+
+            <div
+            w-type="Label" w-left="10" w-top="10" w-width="116"
+            w-auth="enable" w-value="テーブル名"
+            ></div>
+
+            <div 
+            w-type="TextField" w-left="130" w-top="10" w-width="236"
+            w-auth="enable" w-id="tblName">
+            </div>
+
+            <div 
+            w-type="Label" w-left="410" w-top="10" w-width="116"
+            w-auth="enable" w-value="テーブル表示名"
+            ></div>
+
+            <div 
+            w-type="TextField" w-left="530" w-top="10" w-width="236"
+            w-auth="enable" w-id="tblDispName"
+            ></div>
+
+
+            <div
+            w-type="Button" w-left="810" w-right="" w-top="10" w-bottom="" w-width="116" w-height="56" 
+            w-id="searchBtn" w-auth="enable" w-value="検索" w-ime="" w-mode=""
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+            ></div>
+
+            <div w-type="Button" w-left="10" w-right="" w-top="120" w-bottom="" w-width="116" w-height="26" 
+            w-id="newBtn" w-auth="enable" w-value="新規追加" w-ime="" w-mode=""
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}">
+            </div>
+
+        </div>
+    </body>
+</html>

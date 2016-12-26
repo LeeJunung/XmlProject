@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+
+<div class="w-view">
+
+    <div
+            w-type="Table" w-left="" w-right="" w-top="230" w-bottom="" w-width="100%" w-height="575"
+            w-paddingLeft="10" w-paddingRight="10" w-paddingTop="" w-paddingBottom="10"
+            w-id="viewInfo" w-auth="enable" w-value="商品移動管理" w-ime="" w-mode=""
+            w-list=""
+            w-rowCnt="20"
+            w-head="[{value:商品移動 ステータス,width:150},{value:依頼日付,width:100},{value:依頼者名,width:180},{value:出発先,width:180},{value:出発日付,width:100},{value:到着先,width:180},{value:到着日付,width:100},{value:備考,width:300}]"
+            w-body="[{column:prodMoveStatus,horizontalAlign:center,width:150},{column:prodMoveReqDate,horizontalAlign:center,width:100},{column:prodMoveReqEmplCode,horizontalAlign:center,width:180},{column:departure,horizontalAlign:center,width:180},{column:departureDate,horizontalAlign:center,width:100},{column:arrival,horizontalAlign:center,width:180},{column:arrivalDate,horizontalAlign:center,width:100},{column:note1,horizontalAlign:center,width:300}]"
+            w-foot=""
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasType:row,datasDetail:[]}}"
+    ></div>
+
+    <div class="well" style="margin-top: 10px; height: 140px;">
+
+        <!-- FIRST LABEL -->
+        <!--移動ステータス Label-->
+        <div w-type="Label" w-left="10" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="移動ステータス" w-ime="" w-mode="" w-event=""></div>
+        <!--依頼日時 Label-->
+        <div w-type="Label" w-left="10" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="依頼日時" w-ime="" w-mode="" w-event=""></div>
+		<!--移動完了日時 Label-->
+        <div w-type="Label" w-left="10" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="移動完了日時" w-ime="" w-mode="" w-event=""></div>
+
+        <!-- FIRST INPUT -->
+        <!--移動ステータス ComboBox-->
+        <div w-type="ComboBox" w-left="150" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+             w-id="prodMoveStatus" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""
+             w-keyField="key" w-dataField="data" w-nullable="" w-list="[{key:0,data:依頼中},{key:1,data:依頼承認},{key:2,data:依頼返上},{key:3,data:発注完了},{key:9,data:削除/取消}]"></div>
+		<!--依頼日付 START-->
+        <div w-type="DateField" w-left="150" w-right="" w-top="60" w-bottom="" w-width="110" w-height="30"
+             w-id="prodMoveReqDateStart" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+        <!--依頼日付 Label-->
+        <div w-type="Label" w-left="260" w-right="" w-top="60" w-bottom="" w-width="30" w-height="30"
+             w-id="" w-auth="enable" w-value="~" w-ime="" w-mode="" w-event=""></div>
+        <!--依頼日付 END-->
+        <div w-type="DateField" w-left="290" w-right="" w-top="60" w-bottom="" w-width="110" w-height="30"
+             w-id="prodMoveReqDateEnd" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		<!--移動完了日付 START-->
+        <div w-type="DateField" w-left="150" w-right="" w-top="100" w-bottom="" w-width="110" w-height="30"
+             w-id="prodMoveCompDateStart" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+        <!--移動完了日付 Label-->
+        <div w-type="Label" w-left="260" w-right="" w-top="100" w-bottom="" w-width="30" w-height="30"
+             w-id="" w-auth="enable" w-value="~" w-ime="" w-mode="" w-event=""></div>
+        <!--移動完了日付 END-->
+        <div w-type="DateField" w-left="290" w-right="" w-top="100" w-bottom="" w-width="110" w-height="30"
+             w-id="prodMoveCompDateEnd" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+
+        <!-- SECOND LABEL -->
+        <!--依頼者コード Label-->
+        <div w-type="Label" w-left="450" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="依頼者コード" w-ime="" w-mode="" w-event=""></div>
+		<!--"依頼者名" Label-->
+        <div w-type="Label" w-left="450" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="依頼者名" w-ime="" w-mode="" w-event=""></div>
+
+        <!-- SECOND INPUT -->
+		<!--依頼者コード TextField-->
+		<div w-type="SearchField" w-left="590" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+             w-id="prodMoveReqEmplCode" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+             w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetails:[]}}"></div>
+		<!--"依頼者名" TextField-->
+		<div w-type="SearchField" w-left="590" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+             w-id="prodMoveReqEmplName" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+             w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetails:[]}}"></div>
+             
+		<!-- THIRD LABEL -->
+        <!--出発先 Label-->
+        <div w-type="Label" w-left="750" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="出発先" w-ime="" w-mode="" w-event=""></div>
+		<!--到着先 Label-->
+        <div w-type="Label" w-left="750" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="到着先" w-ime="" w-mode="" w-event=""></div>
+        <!--伝表番号 Label-->
+        <div w-type="Label" w-left="750" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+             w-id="" w-auth="enable" w-value="伝表番号" w-ime="" w-mode="" w-event=""></div>
+
+        <!-- THIRD INPUT -->
+		<!--出発先 TextField-->
+		<div w-type="SearchField" w-left="890" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+             w-id="departure" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+             w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetails:[]}}"></div>
+		<!--到着先 TextField-->
+		<div w-type="SearchField" w-left="890" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+             w-id="arrival" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode=""
+             w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetails:[]}}"></div>
+		<!--伝表番号 TextField-->
+		<div w-type="TextField" w-left="890" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+             w-id="voucherNumber" w-keyField="code" w-dataField="data" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""></div>
+
+    </div>
+
+    <div class="btn btn-yellow"
+         w-type="Button" w-left="" w-right="20" w-top="100" w-bottom="" w-width="110" w-height="40"
+         w-id="searchBtn" w-auth="enable" w-value="検索" w-ime="" w-mode=""
+         w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+         
+	<div class="btn btn-green"
+         w-type="Button" w-left="" w-right="20" w-top="170" w-bottom="" w-width="110" w-height="40"
+         w-id="newBtn" w-auth="enable" w-value="依頼" w-ime="" w-mode=""
+         w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+
+</div>
+
+</body>
+</html>

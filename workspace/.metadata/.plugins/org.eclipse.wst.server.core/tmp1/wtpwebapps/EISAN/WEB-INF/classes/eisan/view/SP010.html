@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+
+<div class="w-popup" style="width:450px; height:450px;">
+
+    <div
+            w-type="Data"
+            w-id="userIdId"
+    ></div>
+
+    <div
+            w-type="Data"
+            w-id="userNmId"
+    ></div>
+
+    <div w-type="Table" w-left="0" w-top="0" w-width="100%" w-height="450"
+         w-paddingLeft="4" w-paddingRight="4" w-paddingTop="64" w-paddingBottom="34"
+         w-id="viewInfo" w-auth="enable" w-value="" w-ime="" w-mode=""
+         w-rowCnt="12"
+         w-event="{click:{process:run,compsType:all,compsDetail:[],datasType:row,datasDetail:[]}}"
+         w-head="[{value:選択,width:50},{value:ユーザーＩＤ,width:175},{value:ユーザー名,width:180}]"
+         w-body="[{column:detail,type:Button,value:選択,width:50},{column:userId,width:175},{column:userNm,width:180}]"
+         w-foot=""
+    ></div>
+
+    <div
+            w-type="Label" w-left="0" w-top="0" w-width="116" w-height="28"
+            w-value="ユーザーＩＤ"
+    ></div>
+
+    <div
+            w-type="TextField" w-left="120" w-top="0" w-width="200"
+            w-id="userId" w-auth="enable" w-value="" w-ime="alphanumeric"
+    ></div>
+
+    <div
+            w-type="Label" w-left="0" w-top="30" w-width="116"
+            w-value="ユーザー名"
+    ></div>
+
+    <div
+            w-type="TextField" w-left="120" w-top="30" w-width="200"
+            w-id="userNm" w-auth="enable" w-value=""
+    ></div>
+
+    <div
+            w-type="Button" w-right="0" w-top="0"
+            w-id="userSearchBtn" w-auth="enable" w-value="検索"
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+    ></div>
+
+    <div
+            w-type="Button" w-right="0" w-top="420"
+            w-id="closeBtn" w-auth="enable" w-value="キャンセル"
+            w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+    ></div>
+
+</div>
+
+</body>
+</html>

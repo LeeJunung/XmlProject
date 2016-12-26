@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title></title>
+</head>
+
+<body>
+
+<div class="w-view">
+	
+	<div
+			w-type="Table" w-left="" w-right="" w-top="220" w-bottom="" w-width="100%" w-height="620"
+			w-paddingLeft="10" w-paddingRight="10" w-paddingTop="" w-paddingBottom="10"
+			w-id="viewInfo" w-auth="enable" w-value="発注受託管理" w-ime="" w-mode=""
+			w-list=""
+			w-rowCnt="20"
+			w-head="[{value:受託ステータス,width:110},{value:受注番号,width:130},{value:受託番号,width:130},{value:依頼日付,width:130},{value:依頼担当者コード,width:130},{value:依頼担当者名,width:130},{value:受託日付,width:130},{value:受託担当者コード,width:130},{value:受託担当者名,width:130},{value:備考,width:210}]"
+			w-body="[{column:requestStatus,horizontalAlign:center,width:110},{column:orderNum,width:130,horizontalAlign:center},{column:requestNum,width:130,horizontalAlign:center},{column:requestDate,width:130,horizontalAlign:center},{column:reqEmplCode,width:130,horizontalAlign:center},{column:reqEmplName,width:130,horizontalAlign:center},{column:trusDate,width:130,horizontalAlign:center},{column:trusEmplCode,width:130,horizontalAlign:center},{column:trusEmplName,width:130,horizontalAlign:center},{column:note1,width:210,horizontalAlign:center}]"
+			w-foot=""
+			w-event="{click:{process:run,compsType:all,compsDetail:[],datasType:row,datasDetail:[]}}"
+	></div>
+	
+	<div class="well" style="margin-top: 10px; height: 140px;">
+		
+		<!-- FIRST LABEL -->
+		<!--受託スタータス Label-->
+		<div w-type="Label" w-left="10" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受託スタータス" w-ime="" w-mode="" w-event=""></div>
+		<!--受注有無区分 Label-->
+		<div w-type="Label" w-left="10" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受注有無区分" w-ime="" w-mode="" w-event=""></div>
+		<!--受注番号 Label-->
+		<div w-type="Label" w-left="10" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受注番号" w-ime="" w-mode="" w-event=""></div>
+		
+		<!-- FIRST INPUT -->
+		<!--受託スタータス ComboBox-->
+		<div w-type="ComboBox" w-left="150" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="ordReqStatus" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-keyField="key" w-dataField="data" w-nullable=""
+		     w-list="[{key:0,data:受託前},{key:1,data:受託完了},{key:2,data:受託返上}]"
+		     w-event="{change:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+		<!--受注有無区分 ComboBox-->
+		<div w-type="ComboBox" w-left="150" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="orderExist" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-keyField="key" w-dataField="data" w-nullable=""
+		     w-list="[{key:0,data:受注無し},{key:1,data:受注有り}]"
+		     w-event="{change:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+		<!--受注番号 ComboBox-->
+		<div w-type="TextField" w-left="150" w-right="" w-top="100" w-bottom="" w-width="130" w-height="30"
+		     w-id="orderNum" w-auth="enable" w-value="" w-ime="" w-mode="" w-event=""
+		     w-keyField="key" w-dataField="data" w-nullable="" w-list=""></div>
+		
+		<!-- SECOND LABEL -->
+		<!--受託日付 Label-->
+		<div w-type="Label" w-left="310" w-right="" w-top="20" w-bottom="" w-width="100" w-height="30"
+		     w-id="" w-auth="enable" w-value="受託日付" w-ime="" w-mode="" w-event=""></div>
+		<!--依頼日付 Label-->
+		<div w-type="Label" w-left="310" w-right="" w-top="60" w-bottom="" w-width="100" w-height="30"
+		     w-id="" w-auth="enable" w-value="依頼日付" w-ime="" w-mode="" w-event=""></div>
+		
+		<!-- SECOND INPUT -->
+		<!--受託日付 START-->
+		<div w-type="DateField" w-left="420" w-right="" w-top="20" w-bottom="" w-width="110" w-height="30"
+		     w-id="trusDateStart" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		<!--受託日付 Label-->
+		<div w-type="Label" w-left="530" w-right="" w-top="20" w-bottom="" w-width="30" w-height="30"
+		     w-id="" w-auth="enable" w-value="~" w-ime="" w-mode="" w-event=""></div>
+		<!--受託日付 END-->
+		<div w-type="DateField" w-left="560" w-right="" w-top="20" w-bottom="" w-width="110" w-height="30"
+		     w-id="trusDateEnd" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		<!--依頼日付 START-->
+		<div w-type="DateField" w-left="420" w-right="" w-top="60" w-bottom="" w-width="110" w-height="30"
+		     w-id="reqDateStart" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		<!--依頼日付 Label-->
+		<div w-type="Label" w-left="530" w-right="" w-top="60" w-bottom="" w-width="30" w-height="30"
+		     w-id="" w-auth="enable" w-value="~" w-ime="" w-mode="" w-event=""></div>
+		<!--依頼日付 END-->
+		<div w-type="DateField" w-left="560" w-right="" w-top="60" w-bottom="" w-width="110" w-height="30"
+		     w-id="reqDateEnd" w-auth="enable" w-value="" w-ime="date" w-mode="" w-event=""></div>
+		
+		<!-- THIRD LABEL -->
+		<!--受託担当者コード Label-->
+		<div w-type="Label" w-left="700" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受託担当者コード" w-ime="" w-mode="" w-event=""></div>
+		<!--受託担当者名 Label-->
+		<div w-type="Label" w-left="700" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="" w-auth="enable" w-value="受託担当者名" w-ime="" w-mode="" w-event=""></div>
+		
+		<!--THIRD INPUT -->
+		<!--受託担当者コード TextField-->
+		<div w-type="SearchField" w-left="840" w-right="" w-top="20" w-bottom="" w-width="130" w-height="30"
+		     w-id="emplCode" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+		<!--受託担当者名 TextField-->
+		<div w-type="SearchField" w-left="840" w-right="" w-top="60" w-bottom="" w-width="130" w-height="30"
+		     w-id="emplName" w-auth="enable" w-value="" w-ime="" w-mode=""
+		     w-event="{iconClick:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+		
+		<div class="btn btn-yellow"
+		     w-type="Button" w-left="" w-right="20" w-top="100" w-bottom="" w-width="110" w-height="40"
+		     w-id="searchBtn" w-auth="enable" w-value="検索" w-ime="" w-mode=""
+		     w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+	
+	</div>
+
+</div>
+
+</body>
+</html>

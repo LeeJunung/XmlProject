@@ -1,0 +1,1217 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link href="/system/core/we.css" rel="stylesheet" type="text/css">
+    <link href="/eisan/css/eisan-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="wi-body_wrp">
+    <div id="wi-body">
+
+        <div id="wi-main_wrp">
+            <div id="wi-main">
+
+                <div id="wi-stg_wrp">
+                    <div id="wi-stg">
+                        <div id="wi-view_set_wrp">
+                            <div id="wi-view_set">
+                                <!--<br />-->
+                                <!--&nbsp;&nbsp;Welcome to SmartERP.-->
+                            </div>
+                            <!-- wi-view_set -->
+                        </div>
+                        <!-- wi-view_set_wrp -->
+                    </div>
+                    <!-- wi-stg -->
+                </div>
+                <!-- wi-stg_wrp -->
+
+                <div id="wi-tab_area">
+                    <div id="wi-tab_set_wrp">
+                        <ul id="wi-tab_set"></ul>
+                        <!-- wi-tab_set -->
+                    </div>
+                    <!-- wi-tab_set_wrp -->
+                    <div id="wi-list_set_wrp">
+                        <div id="wi-list_set_btn"></div>
+                    </div>
+                    <!-- wi-list_set_wrp -->
+                </div>
+                <!-- wi-tab_area -->
+
+            </div>
+            <!-- wi-main -->
+        </div>
+        <!-- wi-main_wrp -->
+
+        <div id="wi-navi">
+            <div id="wi-exp_wrp">
+                <div id="wi-exp"></div>
+                <!-- wi-exp -->
+            </div>
+            <!-- wi-exp_wrp -->
+
+            <div id="wi-navi_title_wrp">
+                <div id="wi-navi_title">
+                    <div id="wi-navi_title_txt">
+                        メニュー
+                    </div>
+                    <div id="wi-navi_title_btn"></div>
+                </div>
+                <!-- wi-navi_title -->
+            </div>
+            <!-- wi-navi_title_wrp -->
+        </div>
+        <!-- wi-navi -->
+        <div id="wi-navi_sld"></div>
+        <!-- wi-navi_sld -->
+
+    </div>
+    <!-- wi-body -->
+</div>
+<!-- wi-body_wrp -->
+
+<div>
+    <div id="wi-head" style="float: left">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"
+              style="position: absolute; top:8px; left: 10px; width: 100px;"></span>
+        <div id="wi-user_name" w-type="Text" w-top="0" w-width="300" w-left="35"/>
+
+        <span class="glyphicon glyphicon-time" aria-hidden="true" w-width="100"
+              style="position: absolute; top:32px; left: 10px; width: 100px;"></span>
+        <div id="wi-curr_time" w-type="Text" w-top="28" w-width="240" w-left="35"/>
+
+        <div style="font-size: 40px; font-weight: bolder; color: #122b40; text-align: center; position: absolute; top:0; bottom: 0; left: 0; right: 0; margin: auto;">
+            EISAN
+        </div>
+
+    </div>
+    <div id="wi-portal-menu" style="float: right">
+
+        <!--<li style="float: right;">
+            <div class="wi-line_vertical"></div>
+        </li>-->
+
+        <li id="wi-exit_btn" style="float: right; list-style-type: none;">
+            <!--<a href="/system/help/00.html" target="_blank"></a>-->
+            <a href="#" style="height: inherit;text-decoration: none;">
+                <span class="portal-btn glyphicon glyphicon-off" aria-hidden="true"></span>
+                <div class="portal-btn-text">LOGOUT</div>
+            </a>
+        </li>
+
+        <li id="wi-ss_btn" style="float: right; list-style-type: none;">
+            <!--<a href="/system/help/00.html" target="_blank"></a>-->
+            <a href="#" style="height: inherit;text-decoration: none;">
+                <span class="portal-btn glyphicon glyphicon-camera" aria-hidden="true"></span>
+                <div class="portal-btn-text">CAPTURE</div>
+
+        </li>
+
+
+        <li file-path="PT020" class="view" style="float: right; list-style-type: none;">
+            <!--<a href="/system/help/00.html" target="_blank"></a>-->
+            <a href="#" style="height: inherit;text-decoration: none;">
+                <span class="portal-btn glyphicon glyphicon-book" aria-hidden="true"></span>
+                <div class="portal-btn-text">NOTICE</div>
+                <div id="wi-noti_cnt" w-type="Badge" w-left="" w-right="130" w-width="60" w-top="" w-bottom="" w-color="hotpink"
+                     w-auth="enable" w-id="wi-noti_cnt"></div>
+            </a>
+
+
+
+        </li>
+
+        <!--<li style="float: right; list-style-type: none;">-->
+        <!--<div style="position: relative; top: 30px; right: -120px;">NOTICE</div>-->
+        <!--</li>-->
+
+
+        <!-- 			<li style="float: right;"> -->
+        <!-- 				<div style="position: relative;" w-type="ComboBox" w-width="180" -->
+        <!-- 					id="wi-theme_combo" w-auth="enable" w-value="00" w-keyField="key" -->
+        <!-- 					w-dataField="data" -->
+        <!-- 					w-list="[{key:00,data:Mono Tone},{key:01,data:Pastel Tone},{key:02,data:Test 02},{key:03,data:Test 03},{key:04,data:Test 04},{key:05,data:Test 05}]"></div> -->
+        <!-- 			</li> -->
+        </ul>
+    </div>
+</div>
+<!-- wi-head -->
+
+<div id="wi-foot">
+    WE all rights reserved.
+</div>
+<!-- wi-foot -->
+
+<div id="wi-context">
+    <ul id="wi-context_list_set"></ul>
+    <!-- wi-context_list_set -->
+    <ul id="wi-context_exp_menu"></ul>
+    <!-- wi-context_exp_menu -->
+</div>
+<!-- wi-context -->
+
+<div id="wi-popup">
+    <!-- wi-popup-bg -->
+    <!-- added following by programing -->
+    <!-- <table> -->
+    <!-- 	<tr> -->
+    <!-- 		<td><div id="wi-popup"></div></td> -->
+    <!-- 	</tr> -->
+    <!-- </table> -->
+</div>
+<!-- wi-popup -->
+
+<script>
+    var WI = {
+        // constant
+        C: {},
+        // variable
+        V: {},
+        // function
+        F: {},
+        // html
+        H: {},
+        // service
+        S: {}
+    };
+
+    $(function () {
+        // ------------------------------------------------------------
+        // INITIALIZE
+        // ------------------------------------------------------------
+        // hold $object with id
+        $("html").find("[id]").each(function (index, element) {
+            var $element = $(element);
+            if ($element.attr("id") && $element.attr("id").indexOf("wi-") !== -1) {
+                WI.H[$element.attr("id").substring(3)] = $element;
+            }
+        });
+
+        // ------------------------------------------------------------
+        // CONSTANT
+        // ------------------------------------------------------------
+        // get from DB
+        WI.C["MENU_LIST"];
+        // get from DB
+        WI.C["MENU_MAP"];
+
+        WI.C["DEFAULT_VIEW"] = "PT010";
+
+        // ------------------------------------------------------------
+        // VARIABLE
+        // ------------------------------------------------------------
+        // remember tab's index
+        WI.V["tabIdx"] = 0;
+
+        // remember tab's activated order
+        WI.V["tabActiveOrder"] = 0;
+        WI.V["viewSelected"] = null;
+
+        // navigation
+        WI.V["naviStatus"] = true;
+        // true:open false:close
+        WI.V["naviWidth"] = 0;
+        WI.V["naviSldWidth"] = parseFloat(WI.H.navi_sld.css("width"));
+
+        // remember selected group or file
+        WI.V["expSelected"] = null;
+
+        WI.V["forceOpen"] = [];
+
+
+        // ------------------------------------------------------------
+        // FUNCTION
+        // ------------------------------------------------------------
+        // open context exp menu
+        WI.F["openContextExpMenu"] = function ($target) {
+            var html = "";
+
+            if ($target.hasClass("group")) {
+                var $targetChildrenGroup = $target.next();
+                if ($targetChildrenGroup.length != 0) {
+                    if ($targetChildrenGroup.css("display") === "block") {
+                        html += '<li>close group</li>';
+                    } else {
+                        html += '<li>open group</li>';
+                    }
+                }
+            } else if ($target.hasClass("menu")) {
+                html += '<li>open menu</li>';
+            }
+            WI.H.context.css("display", "block");
+            WI.H.context_exp_menu.html(html);
+            WI.H.context_exp_menu.css({
+                "left": event.clientX,
+                "top": event.clientY,
+                "display": "block"
+            });
+        };
+
+        // close context exp menu
+        WI.F["closeContextExpMenu"] = function () {
+            WI.H.context.css("display", "none");
+            WI.H.context_exp_menu.css("display", "none");
+        };
+
+        // open context tab list
+        WI.F["openContextTabList"] = function () {
+            if (WI.H.context_list_set.children("li").length === 0) {
+                return;
+            }
+            WI.H.context.css("display", "block");
+            WI.H.context_list_set.css("display", "block");
+            WI.H.list_set_btn.addClass("pressed");
+        };
+
+        // close context tab list
+        WI.F["closeContextTabList"] = function () {
+            WI.H.context.css("display", "none");
+            WI.H.context_list_set.css("display", "none");
+            WI.H.list_set_btn.removeClass("pressed");
+        };
+
+        WI.F["resize"] = function () {
+            if (WE.F.getBrowserSize().width < 1240) {
+                WI.F.closeNavi();
+            } else {
+                WI.F.openNavi();
+            }
+        };
+
+        WI.F["openNavi"] = function () {
+            if (WI.H.navi_sld.attr("status") === "closed") {
+                if (WI.V.naviWidth < 200) {
+                    WI.V.naviWidth = 200;
+                }
+                WI.H.navi.css({
+                    "width": WI.V.naviWidth + "px",
+                    "overflow": "auto"
+                });
+                WI.H.main_wrp.css("padding-left", WI.V.naviWidth + WI.V.naviSldWidth + "px");
+                WI.H.navi_sld.css({
+                    "left": WI.V.naviWidth + "px",
+                    "background-color": "transparent"
+                });
+                WI.H.navi_sld.attr("status", "opened");
+            }
+        };
+
+        WI.F["closeNavi"] = function () {
+            if (WI.H.navi_sld.attr("status") === "opened") {
+                WI.V.naviWidth = WI.H.navi.width();
+                WI.H.navi.css({
+                    "width": 0 + "px",
+                    "overflow": "hidden"
+                });
+                WI.H.main_wrp.css("padding-left", WI.V.naviSldWidth + "px");
+                WI.H.navi_sld.css({
+                    "left": 0 + "px",
+                    "background-color": "rgb(81, 81, 81)"
+                });
+                WI.H.navi_sld.attr("status", "closed");
+            }
+        };
+
+        WI.F["setExpSelected"] = function ($target) {
+            if (WI.V.expSelected) {
+                WI.V.expSelected.removeClass("selected");
+            }
+
+            WI.V.expSelected = $target;
+            if (WI.V.expSelected) {
+                WI.V.expSelected.addClass("selected");
+            }
+
+        };
+
+        WI.F["openView"] = function (path, info) {
+
+            if (path === WI.C["DEFAULT_VIEW"]) {
+                WI.F.openDefaultView(path, info);
+                return;
+            }
+
+            var menuDisp = WI.C.MENU_MAP[path];
+            if (WE.C.SERVICE_ID.indexOf('_DEV') !== -1) {
+                menuDisp = WI.C.MENU_MAP[path] + ' [' + path + ']';
+            }
+            if (!WI.F.existView(path)) {// view does not exist
+                // tab
+                var htmlTab = "";
+                htmlTab += '<li file-path="' + path + '">';
+                htmlTab += ' <div class="wi-tab_title">' + menuDisp + '</div>';
+                htmlTab += ' <div class="wi-tab_refresh"></div>';
+                htmlTab += ' <div class="wi-tab_delete"></div>';
+                htmlTab += '</li>';
+                var $htmlTab = $(htmlTab);
+
+                // list
+                var htmlList = "";
+                htmlList += '<li file-path="' + path + '">';
+                htmlList += ' <div>' + menuDisp + '</div>';
+                htmlList += '</li>';
+                var $htmlList = $(htmlList);
+
+                // view
+                var htmlView = "";
+                htmlView += '<div file-path="' + path + '">';
+                htmlView += ' <div class="wi-view">' + info.content.trim() + '</div>';
+                htmlView += '</div>';
+                var $htmlView = $(htmlView);
+                var $view = $htmlView.find("div.w-view");
+
+                WI.V.tabIdx++;
+                var tabId = WI.V.tabIdx;
+                var viewId = path;
+                $htmlTab.attr({
+                    "w-tabId": tabId,
+                    "w-viewId": viewId,
+                    "id": 'TAB_' + tabId + "_" + viewId
+                });
+                $htmlList.attr({
+                    "w-tabId": tabId,
+                    "w-viewId": viewId,
+                    "id": 'SUB_' + tabId + "_" + viewId
+                });
+                $htmlView.attr({
+                    "w-tabId": tabId,
+                    "w-viewId": viewId,
+                    "id": 'WRAP_' + tabId + "_" + viewId
+                });
+                $view.attr({
+                    "w-tabId": tabId,
+                    "w-viewId": viewId,
+                    "id": 'BASE_' + tabId + "_" + viewId
+                });
+                $view.find("div[w-type]").each(function (index, element) {
+                    var $element = $(element);
+                    var elementId = $element.attr("w-id");
+                    if (elementId) {
+                        $element.attr({
+                            "w-tabId": tabId,
+                            "w-viewId": viewId,
+                            "id": tabId + "_" + viewId + "_" + $element.attr("w-id"),
+                        });
+                    } else {
+                        $element.attr({
+                            "w-tabId": tabId,
+                            "w-viewId": viewId
+                        });
+                    }
+                });
+                $view.find("div[w-event]").each(function (index, element) {
+                    $(element).attr({
+                        "w-tabId": tabId,
+                        "w-viewId": viewId,
+                    });
+                });
+
+                WI.H.tab_set.prepend($htmlTab);
+                WI.H.context_list_set.append($htmlList);
+                WI.H.view_set.prepend($htmlView);
+
+                WI.F.activateView(path);
+
+                WI.F.initView(path, info);
+
+            } else {
+                if (!WI.F.isActiveView(path)) {
+                    WI.F.activateView(path);
+
+                    // WI.F.initView(path, info);
+                }
+            }
+
+
+        };
+
+
+        WI.F["openDefaultView"] = function (path, info) {
+            if (!WI.F.existView(path)) {// view does not exist
+
+                // view
+                var htmlView = "";
+                htmlView += '<div file-path="' + path + '">';
+                htmlView += ' <div class="wi-view">' + info.content.trim() + '</div>';
+                htmlView += '</div>';
+                var $htmlView = $(htmlView);
+                var $view = $htmlView.find("div.w-view");
+
+                WI.V.tabIdx++;
+                var tabId = WI.V.tabIdx;
+                var viewId = path;
+
+                $htmlView.attr({
+                    "w-tabId": tabId,
+                    "w-viewId": viewId,
+                    "id": 'WRAP_' + tabId + "_" + viewId
+                });
+                $view.attr({
+                    "w-tabId": tabId,
+                    "w-viewId": viewId,
+                    "id": 'BASE_' + tabId + "_" + viewId
+                });
+                $view.find("div[w-type]").each(function (index, element) {
+                    var $element = $(element);
+                    var elementId = $element.attr("w-id");
+                    if (elementId) {
+                        $element.attr({
+                            "w-tabId": tabId,
+                            "w-viewId": viewId,
+                            "id": tabId + "_" + viewId + "_" + $element.attr("w-id"),
+                        });
+                    } else {
+                        $element.attr({
+                            "w-tabId": tabId,
+                            "w-viewId": viewId
+                        });
+                    }
+                });
+                $view.find("div[w-event]").each(function (index, element) {
+                    $(element).attr({
+                        "w-tabId": tabId,
+                        "w-viewId": viewId,
+                    });
+                });
+
+                WI.H.view_set.prepend($htmlView);
+
+                WI.F.activateView(path);
+
+                WI.F.initView(path, info);
+
+            } else {
+                if (!WI.F.isActiveView(path)) {
+                    WI.F.activateView(path);
+
+                    // WI.F.initView(path, info);
+                }
+            }
+
+
+        };
+
+        WI.F["initView"] = function (path, info) {
+            // view
+            var $html = null;
+            WI.H.view_set.children("div").each(function (index, element) {
+                var $element = $(element);
+                if ($element.attr("file-path") === path) {
+                    $html = $element;
+                    return;
+                }
+            });
+
+            if ($html) {
+                var tabId = $html.attr("w-tabId");
+                var viewId = path;
+                WE.F.initAll($html);
+                WI.H.body.trigger(viewId, [tabId, viewId]);
+                WE.S.call({
+                    task: viewId + ".open",
+                    tabId: tabId,
+                    viewId: viewId,
+                    comps: null,
+                    datas: info.datas
+                });
+            }
+        };
+
+        WI.F["refreshView"] = function (path, info) {
+            // view
+            var htmlView = "";
+            htmlView += '<div file-path="' + path + '">';
+            htmlView += ' <div class="wi-view">' + info.content.trim() + '</div>';
+            htmlView += '</div>';
+            var $htmlView = $(htmlView);
+            var $view = $htmlView.find("div.w-view");
+
+            var tabId = WI.H.tab_set.find('li[file-path=' + path + ']').attr('w-tabId');
+            var viewId = path;
+            $htmlView.attr({
+                "w-tabId": tabId,
+                "w-viewId": viewId,
+                "id": 'WRAP_' + tabId + "_" + viewId
+            });
+            $view.attr({
+                "w-tabId": tabId,
+                "w-viewId": viewId,
+                "id": 'BASE_' + tabId + "_" + viewId
+            });
+            $view.find("div[w-type]").each(function (index, element) {
+                var $element = $(element);
+                var elementId = $element.attr("w-id");
+                if (elementId) {
+                    $element.attr({
+                        "w-tabId": tabId,
+                        "w-viewId": viewId,
+                        "id": tabId + "_" + viewId + "_" + $element.attr("w-id"),
+                    });
+                } else {
+                    $element.attr({
+                        "w-tabId": tabId,
+                        "w-viewId": viewId
+                    });
+                }
+            });
+            $view.find("div[w-event]").each(function (index, element) {
+                $(element).attr({
+                    "w-tabId": tabId,
+                    "w-viewId": viewId,
+                });
+            });
+
+            WI.H.view_set.find('div[file-path=' + path + ']').html($view);
+
+            WI.F.activateView(path);
+
+            WI.F.initView(path, info);
+        };
+
+        WI.F["activateView"] = function (path) {
+            var selectedIndex = -1;
+            // tab
+            WI.H.tab_set.children("li").each(function (index, element) {
+                var $element = $(element);
+                // deactivated all tabs
+                $element.removeClass("wi-tab_active");
+                // activate selected tab
+                if ($element.attr("file-path") === path) {
+                    $element.addClass("wi-tab_active");
+                    // remember tab's active order
+                    $element.attr("wi-tab_active-order", ++WI.V.tabActiveOrder);
+                    if ($element[0].offsetTop !== 0) {
+                        selectedIndex = index;
+                    }
+                }
+            });
+
+            // view
+            WI.H.view_set.children("div").each(function (index, element) {
+                var $element = $(element);
+                // deactivated all tabs
+                $element.removeClass("wi-view_active");
+                WI.V.viewSelected = null;
+                // activate selected tab
+                if ($element.attr("file-path") === path) {
+                    $element.addClass("wi-view_active");
+                    WI.V.viewSelected = $element;
+                }
+            });
+
+            // set tab position first when tab is unvisible
+            if (selectedIndex !== -1) {
+                WI.H.tab_set.children("li:first-child").before(WI.H["tab-set"].children("li:eq(" + selectedIndex + ")"));
+                WI.H.view_set.children("div:first-child").before(WI.H["view-set"].children("div:eq(" + selectedIndex + ")"));
+                WI.H.context_list_set.children("li:last-child").after(WI.H["context-list-set"].children("li:eq(" + (WI.H["context-list-set"].children("li").length - 1 - selectedIndex) + ")"));
+            }
+        };
+
+        // remove tab
+        WI.F["closeView"] = function (path, info) {
+            if (WI.F.isActiveView(path) && WI.F.getViewLength() !== 1) {
+                if (WI.F.isFirstView(path)) {// is first tab
+                    // activate last selected view
+                    WI.F.activateView(WI.F.getPathLastActivated());
+                } else {// is not first tab
+                    // activate forward view
+                    WI.F.activateView(WI.F.getPathBeforeActivated());
+                }
+            }
+
+            if (WI.F.getViewLength() === 1) {
+                WI.F.activateView(WI.C["DEFAULT_VIEW"]);
+            }
+
+            // tab
+            WI.H.tab_set.children("li").each(function (index, element) {
+                if ($(element).attr("file-path") === path) {
+                    $(element).remove();
+                }
+            });
+
+            // list
+            WI.H.context_list_set.children("li").each(function (index, element) {
+                if ($(element).attr("file-path") === path) {
+                    $(element).remove();
+                }
+            });
+
+            // view
+            WI.H.view_set.children("div").each(function (index, element) {
+                if ($(element).attr("file-path") === path) {
+                    WE.F.destroyAll($(element));
+                    $(element).remove();
+                }
+            });
+        };
+
+        // whether tab is exist or not
+        WI.F["existView"] = function (path) {
+            var existView = false;
+            WI.H.tab_set.children("li").each(function (index, element) {
+                if (element.getAttribute("file-path") === path) {
+                    existView = true;
+                    return false;
+                }
+            });
+
+            return existView;
+        };
+
+        // whether tab is activated or not
+        WI.F["isActiveView"] = function (path) {
+            var isActiveView = false;
+
+            WI.H.tab_set.children("li").each(function (index, element) {
+                if ($(element).attr("file-path") === path && $(element).hasClass("wi-tab_active")) {
+                    isActiveView = true;
+                    return false;
+                }
+            });
+
+            return isActiveView;
+        };
+
+        // whether tab position is first tab or not
+        WI.F["isFirstView"] = function (path) {
+            var isFirstView = false;
+
+            WI.H.tab_set.children("li").each(function (index, element) {
+                if (index === 0 && $(element).attr("file-path") === path) {
+                    isFirstView = true;
+                }
+                return false;
+            });
+
+            return isFirstView;
+        };
+
+        WI.F["getViewLength"] = function () {
+            return WI.H.tab_set.children("li").length;
+        };
+
+        // whether tab is activated or not
+        WI.F["getPathBeforeActivated"] = function () {
+            var path = null;
+            var selectedIndex = -1;
+
+            WI.H.tab_set.children("li").each(function (index, element) {
+                if ($(element).hasClass("wi-tab_active")) {
+                    selectedIndex = index;
+                    return false;
+                }
+            });
+
+            if (selectedIndex !== -1) {
+                path = WI.H.tab_set.children("li:eq(" + (selectedIndex - 1) + ")").attr("file-path");
+            }
+
+            return path;
+        };
+
+        WI.F["getPathLastActivated"] = function () {
+            var path = null;
+            var selectedIndex = -1;
+            var maxTabActiveOrder = -1;
+
+            WI.H.tab_set.children("li").each(function (index, element) {
+                var $element = $(element);
+                // find tab that is not active and last activated
+                if (!$element.hasClass("wi-tab_active") && $element.attr("wi-tab_active-order") > maxTabActiveOrder) {
+                    maxTabActiveOrder = $element.attr("wi-tab_active-order");
+                    selectedIndex = index;
+                }
+            });
+
+            if (selectedIndex !== -1) {
+                path = WI.H.tab_set.children("li:eq(" + (selectedIndex) + ")").attr("file-path");
+            }
+
+            return path;
+        };
+
+        WI.F["openPopup"] = function (path, info) {
+            var html = "<table><tr><td><div class='popup'><div class='title'></div><div class='body'>" + info.content.trim() + "</div><div class='btns'></div></div></td></tr></table>";
+            var tabId = "P";
+            var viewId = path;
+            var $wrap = $(html);
+            var $view = $wrap.find('div.w-popup');
+            $wrap.attr({
+                "w-tabId": tabId,
+                "w-viewId": viewId,
+                "id": 'WRAP_' + tabId + "_" + viewId
+            });
+            $view.attr({
+                "w-tabId": tabId,
+                "w-viewId": viewId,
+                "id": 'BASE_' + tabId + "_" + viewId
+            });
+            $view.find("div[w-type]").each(function (index, element) {
+                var $element = $(element);
+                var elementId = $element.attr("w-id");
+                if (elementId) {
+                    $element.attr({
+                        "w-tabId": tabId,
+                        "w-viewId": viewId,
+                        "id": tabId + "_" + viewId + "_" + $element.attr("w-id"),
+                    });
+                } else {
+                    $element.attr({
+                        "w-tabId": tabId,
+                        "w-viewId": viewId
+                    });
+                }
+            });
+            $view.find("div[w-event]").each(function (index, element) {
+                $(element).attr({
+                    "w-tabId": tabId,
+                    "w-viewId": viewId,
+                });
+            });
+
+            WI.H.popup.append($wrap);
+
+            var titleClicked = false;
+            $wrap.find("div.popup").draggable({
+                start: function (event, ui) {
+                    if (!titleClicked) {
+                        return false;
+                    }
+                },
+                stop: function (event, ui) {
+                    titleClicked = false;
+                },
+                containment: WI.H.popup
+            }).children("div.title").on("mousedown", function (event) {
+                titleClicked = true;
+            });
+
+            var title = info.title || $(this).children(".w-popup").attr("w-popup_title") || "No Title";
+
+            $wrap.find("div.title").html(title + "<button class='w-close'></button>");
+
+            var closeBtnClicked = function () {
+                WE.S.call({
+                    task: viewId + ".close",
+                    tabId: tabId,
+                    viewId: viewId,
+                    comps: WE.F.getAll($view),
+                    datas: null
+                });
+            };
+
+            $wrap.find(".w-close").click(function (event) {
+                closeBtnClicked();
+            });
+
+            WI.H.popup.css("display", "block");
+
+            WI.F.initPopup(path, info);
+        };
+
+        WI.F["initPopup"] = function (path, info) {
+            var tabId = "P";
+            var viewId = path;
+            var $wrap = WI.H.popup.find('table[id="WRAP_' + tabId + '_' + viewId + '"]');
+            var $view = $wrap.find('div.w-popup');
+
+            if ($view) {
+                WE.F.initAll($view);
+                WI.H.body.trigger(viewId, [tabId, viewId]);
+                WE.S.call({
+                    task: viewId + ".open",
+                    tabId: tabId,
+                    viewId: viewId,
+                    comps: null,
+                    datas: info.datas
+                });
+            }
+        };
+
+        WI.F["closePopup"] = function (path, info) {
+            var tabId = "P";
+            var viewId = path;
+            var $wrap = WI.H.popup.find('table[id="WRAP_' + tabId + '_' + viewId + '"]');
+            var $view = $wrap.find('div.w-popup');
+
+            if ($view) {
+                WE.F.destroyAll($view);
+                $wrap.remove();
+            }
+
+            if (WI.H.popup.children("table").length == 0) {
+                WI.H.popup.css("display", "none");
+            }
+        };
+
+        WI.F["getMenuInfo"] = function (menuList) {
+            var rtnHtml = "";
+            if ($.isArray(menuList)) {
+                // rtnHtml += isRoot || false ? '<ul style="padding-left:0px;">' :
+                // '<ul style="display:none;">';// FOR close all menu at first
+                rtnHtml += '<ul>';
+                for (var i = 0, iLen = menuList.length; i < iLen; i++) {
+                    var menuItem = menuList[i];
+
+                    rtnHtml += '<li file-path="' + menuItem["menuUrl"] + '">';
+
+                    if (menuItem["menuType"] === "group") {
+                        if (menuItem["menuList"].length !== 0) {
+                            rtnHtml += '  <div class="group open"><div class="icon">' + menuItem["menuName"] + '</div></div>';
+                            rtnHtml += WI.F.getMenuInfo(menuItem["menuList"]);
+                        } else {
+                            rtnHtml += '  <div class="group none"><div class="icon">' + menuItem["menuName"] + '</div></div>';
+                        }
+                    } else {
+                        rtnHtml += '  <div class="menu view"><div class="icon">' + menuItem["menuName"] + '</div></div>';
+                    }
+
+                    rtnHtml += '</li>';
+                }
+                rtnHtml += '</ul>';
+            }
+            return rtnHtml;
+        };
+
+        WI.F["setMenuList"] = function (menuList) {
+            WI.C.MENU_LIST = [];
+            WI.C.MENU_MAP = {};
+
+            WI.C.MENU_LIST = [];
+            var tempMap = {};
+
+            for (var i = 0, iLen = menuList.length; i < iLen; i++) {
+                var menuItem = menuList[i];
+                menuItem["menuType"] = ((menuItem["menuUrl"] || '') === '') ? 'group' : 'view';
+                menuItem["menuList"] = [];
+
+                if (!menuItem.menuUpperId) {
+                    if (menuItem.menuKind != 9) {
+                        WI.C.MENU_LIST.push(menuItem);
+                    }
+                } else {
+                    if (!tempMap[menuItem.menuUpperId]) {
+                        tempMap[menuItem.menuUpperId] = [];
+                    }
+                    tempMap[menuItem.menuUpperId].push(menuItem);
+                }
+                WI.C.MENU_MAP[menuItem["menuUrl"]] = menuItem["menuName"];
+            }
+
+            for (var i = 0, iLen = menuList.length; i < iLen; i++) {
+                var menuItem = menuList[i];
+                if (tempMap[menuItem.menuId]) {
+                    menuItem["menuList"] = tempMap[menuItem.menuId];
+                }
+            }
+
+            WI.H.exp.html(WI.F.getMenuInfo(WI.C.MENU_LIST));
+        };
+
+        // ------------------------------------------------------------
+        // HTML
+        // ------------------------------------------------------------
+        // when double click explorer, open file and add tab
+        WI.H["context"].mousedown(function (event) {
+            if (event.target.id !== "wi-context") {
+                return;
+            }
+            WI.F.closeContextExpMenu();
+            WI.F.closeContextTabList();
+        });
+
+        WI.H["navi_title_btn"].click(function (event) {
+            WI.S.init();
+        });
+
+        WI.H["navi_sld"].draggable({
+            axis: "x",
+            containment: [0, 0, 600, 0],
+            start: function (event, ui) {
+                WI.V.naviSldWidth = WI.H["navi_sld"].outerWidth();
+            },
+            drag: function (event, ui) {
+                WI.H.navi.css("width", event.target.offsetLeft + "px");
+                WI.H.main_wrp.css("padding-left", event.target.offsetLeft + WI.V.naviSldWidth + "px");
+            },
+            stop: function (event, ui) {
+                WI.H.navi.css("width", event.target.offsetLeft + "px");
+                WI.H.main_wrp.css("padding-left", event.target.offsetLeft + WI.V.naviSldWidth + "px");
+            }
+        }).dblclick(function (event) {
+            if (WI.H.navi_sld.attr("status") === "opened") {
+                WI.F.closeNavi();
+            } else {
+                WI.F.openNavi();
+            }
+        });
+
+        WI.H["ss_btn"].click(function () {
+            WE.F.screenshot('ScreenShot');
+        });
+
+        WI.H["exit_btn"].click(function () {
+            window.open(location.origin + location.pathname, '_self').close();
+            // bug fix
+            //window.close();
+        });
+
+
+        // noti button
+        WI.H["portal-menu"].on('click', 'li.view', function (event) {
+            var $target = $(event.target);
+            var viewId = $target.parents("li").attr("file-path");
+            WE.S.call({
+                task: "_Main.openView",
+                tabId: null,
+                viewId: viewId,
+                comps: null,
+                datas: null
+            });
+        });
+
+
+        // when left or right click explorer
+        WI.H["exp"].mousedown(function (event) {
+            if (event.target.nodeName != "DIV") {
+                return;
+            }
+
+            var $target = $(event.target);
+
+            if (event.target.id != "wi-exp") {
+                WI.F.setExpSelected($target);
+            } else {
+                WI.F.setExpSelected();
+            }
+
+            if (event.which === 3) {
+                WI.F.openContextExpMenu($target);
+            }
+        });
+
+        // when double click explorer, open file and add tab
+        WI.H["exp"].on('click', 'div.group', function (event) {
+            var $target = $(event.target);
+            if ($target.hasClass("icon")) {
+                $target = $target.parent();
+            }
+            var viewId = $target.parent().attr("file-path");
+            var $targetChildrenGroup = $target.next();
+            if ($targetChildrenGroup.length === 0) {
+                return;
+            }// when folder do not have children
+
+            if ($targetChildrenGroup.css("display") === "block") {
+                // close folder
+                $targetChildrenGroup.css("display", "none");
+                $target.removeClass("open");
+            } else {
+                // open folder
+                $targetChildrenGroup.css("display", "block");
+                $target.addClass("open");
+            }
+        });
+
+        // when double click explorer, open file and add tab
+        WI.H["exp"].on('click', 'div.menu.view', function (event) {
+            var $target = $(event.target);
+            if ($target.hasClass("icon")) {
+                $target = $target.parent();
+            }
+            var viewId = $target.parent().attr("file-path");
+            WE.S.call({
+                task: "_Main.openView",
+                tabId: null,
+                viewId: viewId,
+                comps: null,
+                datas: null
+            });
+        });
+
+        // context exp menu
+        WI.H["context_exp_menu"].click(function (event) {
+            if (WI.V.expSelected && event.target.tagName !== "LI") {
+                return;
+            }
+
+            WI.F.closeContextExpMenu();
+
+            var $target = WI.V.expSelected;
+            var viewId = $target.parent().attr("file-path");
+            var $targetChildrenGroup = $target.next();
+            switch (event.target.innerText) {
+                case "open group":
+                    $targetChildrenGroup.css("display", "block");
+                    $target.addClass("open");
+                    break;
+                case "close group":
+                    $targetChildrenGroup.css("display", "none");
+                    $target.removeClass("open");
+                    break;
+                case "open":
+                    WE.S.call({
+                        task: "INDEX.open",
+                        tabId: null,
+                        viewId: viewId,
+                        comps: null,
+                        datas: null
+                    });
+                    break;
+            }
+        });
+
+        // when click tab or tab's delete button
+        WI.H["tab_set"].on('click', 'li', function (event) {
+            var $target = $(this);
+            var path = $target.attr("file-path");
+            WI.F.activateView(path);
+            // activate tab
+        });
+        WI.H["tab_set"].on('click', '.wi-tab_refresh', function (event) {
+            var $target = $(this).parent();
+            var viewId = $target.attr("file-path");
+            WE.S.call({
+                task: "_Main.refreshView",
+                tabId: null,
+                viewId: viewId,
+                comps: null,
+                datas: null
+            });
+        });
+        WI.H["tab_set"].on('click', '.wi-tab_delete', function (event) {
+            var $target = $(event.target).parent();
+            var tabId = $target.attr("w-tabId");
+            var viewId = $target.attr("file-path");
+            WE.S.call({
+                task: viewId + ".close",
+                tabId: tabId,
+                viewId: viewId,
+                comps: null,
+                datas: null
+            });
+        });
+
+        // when double click explorer, open file and add tab
+        WI.H["list_set_btn"].click(function (event) {
+            WI.F.openContextTabList();
+        });
+
+        // when double click explorer, open file and add tab
+        WI.H["context_list_set"].click(function (event) {
+            if (event.target.nodeName == "UL") {
+                return;
+            }
+
+            var $target = event.target.nodeName == "LI" ? $(event.target).children("div:eq(0)") : $(event.target);
+            var path = $target.parent().attr("file-path");
+            WI.F.closeContextTabList();
+            // close context
+            WI.F.activateView(path);
+            // activate tab
+        });
+
+        //			WI.H['theme_combo'].on('w-change', function(event) {
+        //				var themeNum = WE.F.getOption(WI.H.theme_combo, 'value');
+        //				$('link[w-id="theme_comp"]').attr('href',
+        //						'/system/comp/Comp' + themeNum + '.css');
+        //				$('link[w-id="theme_main"]').attr('href',
+        //						'ctrl/_Main' + themeNum + '.css');
+        //			});
+
+        // ------------------------------------------------------------
+        // SERVICE
+        // ------------------------------------------------------------
+        WI.S['init'] = function () {
+            WE.S.call({
+                task: "_Main.open",
+                tabId: null,
+                viewId: null,
+                comps: null,
+                datas: null
+            }, function (prm, rtn) {
+                // MENU
+                if (rtn.datas.userName) {
+                    WI.H.user_name.text(rtn.datas.userName);
+                }
+                if (rtn.datas.loginTime) {
+                    WI.H.curr_time.text(rtn.datas.loginTime);
+                }
+                if (rtn.datas.menuList) {
+                    WI.F.setMenuList(rtn.datas.menuList);
+                    for (var i = 0, iLen = WI.V.forceOpen.length; i < iLen; i++) {
+                        var forceOpen = WI.V.forceOpen[iLen - i - 1];
+                        WI.H.exp.find('li[file-path="' + forceOpen + '"]').children('div.menu').trigger("click");
+                    }
+
+                    WE.S.call({
+                        task: "_Main.openView",
+                        tabId: null,
+                        viewId: WI.C["DEFAULT_VIEW"],
+                        comps: null,
+                        datas: null
+                    });
+                }
+            });
+        };
+
+
+        // ------------------------------------------------------------
+        // WI.S.helloCall(一定の間隔(1分)で呼び出される関数)
+        // ------------------------------------------------------------
+        WI.S["helloCall"] = function () {
+            var reqAjax = function () {
+                WE.S.call_noload({
+                    task: "_Main.helloCall",
+                    tabId: null,
+                    viewId: null,
+                    comps: null,
+                    datas: null
+                }, function (prm, rtn) {
+                    // Notification counts
+                    if (rtn.datas.notiCnt) {
+                        WI.H.noti_cnt.text(rtn.datas.notiCnt > 0 ? rtn.datas.notiCnt : '');
+                    }
+                    if (rtn.datas.currTime) {
+                        WI.H.curr_time.text(rtn.datas.currTime);
+                    }
+                });
+                setTimeout(reqAjax, 60 * 1000);
+            }
+            reqAjax();
+        };
+
+        // ------------------------------------------------------------
+        // START
+        // ------------------------------------------------------------
+        // if (!WE.F.getAuthStatus()) {
+        // WI.H.body.css("display", "none");
+        // WE.F.alert("認証情報取得に失敗しました。");
+        // }
+
+        WE.F.IMPL_OPEN_VIEW = WI.F.openView;
+        WE.F.IMPL_REFRESH_VIEW = WI.F.refreshView;
+        WE.F.IMPL_CLOSE_VIEW = WI.F.closeView;
+        WE.F.IMPL_OPEN_POPUP = WI.F.openPopup;
+        WE.F.IMPL_REFRESH_POPUP = WI.F.refreshPopup;
+        WE.F.IMPL_CLOSE_POPUP = WI.F.closePopup;
+
+        WE.F.initAll();
+
+        $(window).resize(WI.F.resize);
+        WI.F.resize();
+
+        WI.S.init();
+
+        WI.S.helloCall();
+
+    });
+</script>
+</body>
+</html>

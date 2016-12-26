@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+<body>
+
+<div class="w-popup" style="width:516px; height:450px;">
+
+    <div w-type="Data" w-id="custCodeID"></div>
+    <div w-type="Data" w-id="custNameID"></div>
+    <div w-type="Data" w-id="custManagerID"></div>
+    <div w-type="Data" w-id="custPhoneID"></div>
+
+    <div w-type="Table" w-left="0" w-top="0" w-width="100%" w-height="420"
+         w-paddingLeft="4" w-paddingRight="4" w-paddingTop="64" w-paddingBottom="34"
+         w-id="viewInfo" w-auth="enable" w-value="" w-ime="" w-mode=""
+         w-rowCnt="10"
+         w-event="{click:{process:run,compsType:all,compsDetail:[],datasType:row,datasDetail:[]}}"
+         w-head="[{value:選択},{value:得意先コード},{value:得意先名},{value:担当者},{value:電話番号}]"
+         w-body="[{column:detail,type:Button,value:選択},{column:custCode},{column:custName},{column:custManager},{column:custPhone}]"
+         w-foot=""
+    ></div>
+
+    <div w-type="Label" w-left="0" w-top="0" w-width="120" w-height="30"
+         w-value="得意先コード"></div>
+    <div w-type="TextField" w-left="120" w-top="0" w-width="160"
+         w-id="custCode" w-auth="enable" w-value="" w-ime="alphanumeric"></div>
+
+    <div w-type="Label" w-left="0" w-top="30" w-width="120"
+         w-value="得意先名"></div>
+    <div w-type="TextField" w-left="120" w-top="30" w-width="160"
+         w-id="custName" w-auth="enable" w-value=""></div>
+
+    <div class="btn btn-yellow"
+        w-type="Button" w-right="0" w-top="0" w-height="60"
+        w-id="searchBtn" w-auth="enable" w-value="検索"
+        w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"></div>
+
+    <div class="btn btn-yellow"
+        w-type="Button" w-right="0" w-top="420"
+        w-id="closeBtn" w-auth="enable" w-value="取消"
+        w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+    ></div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+    </head>
+    <body>
+    <div class="w-popup" style="width:556px; height:540px;">
+
+        <div
+                w-type="Data"
+                w-id="searchBtnId"
+        ></div>
+
+        <div
+                w-type="Data"
+                w-id="id"
+        ></div>
+
+        <div
+                w-type="Label" w-left="0" w-top="0" w-width="116"
+                w-value="タイトル"
+        ></div>
+
+        <div
+                w-type="TextField" w-left="120" w-top="0" w-width="436"
+                w-id="title" w-auth="enable"
+        ></div>
+
+
+        <div
+            w-type="Label" w-left="0" w-top="30" w-width="116"
+            w-value="作成日時"
+        ></div>
+
+        <div
+                w-type="TextField" w-left="120" w-top="30" w-width="156"
+                w-id="upddttm" w-auth="readonly"
+        ></div>
+
+        <div
+                w-type="Label" w-left="280" w-top="30" w-width="116"
+                w-value="作成者" w-id="testLabel"
+        ></div>
+
+        <div
+                w-type="TextField" w-left="400" w-top="30" w-width="156"
+                w-id="userName" w-auth="readonly"
+        ></div>
+
+
+        <div
+                w-type="Label" w-left="0" w-top="60" w-width="100%"
+                w-value="内容"
+        ></div>
+
+        <div
+                w-type="TextArea" w-left="0" w-top="90" w-width="556" w-height="416"
+                w-id="message" w-auth="enable"
+        ></div>
+
+        <div
+                w-type="Button" w-right="200" w-top="510"
+                w-id="updateBtn" w-auth="enable" w-value="修正"
+                w-event="{click:{process:run,compsType:custom,compsDetail:[all,wi-noti_cnt],datasDetail:[]}}"
+        ></div>
+
+        <div
+                w-type="Button" w-right="100" w-top="510"
+                w-id="deleteBtn" w-auth="enable" w-value="削除"
+                w-event="{click:{process:run,compsType:custom,compsDetail:[all,wi-noti_cnt],datasDetail:[]}}"
+        ></div>
+
+        <div
+                w-type="Button" w-right="0" w-top="510"
+                w-id="closeBtn" w-auth="enable" w-value="キャンセル"
+                w-event="{click:{process:run,compsType:custom,compsDetail:[all,wi-noti_cnt],datasDetail:[]}}"
+        ></div>
+
+    </div>
+    </body>
+</html>

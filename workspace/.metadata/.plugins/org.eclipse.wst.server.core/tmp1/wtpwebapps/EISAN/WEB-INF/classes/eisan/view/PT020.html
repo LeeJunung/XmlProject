@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+    </head>
+    <body>
+    <div class="w-view" style="width:100%; height:100%;">
+
+        <div w-type="Data" w-id="rslt"></div>
+
+
+        <div w-type="Table" w-left="0" w-top="0" w-width="1077" w-height="824"
+             w-paddingLeft="10" w-paddingRight="10" w-paddingTop="150" w-paddingBottom="10"
+             w-id="noticeInfo" w-auth="enable" w-value="告知事項一覧"
+             w-rowCnt="24"
+             w-event="{click:{process:run,compsType:custom,compsDetail:[searchBtn],datasType:row,datasDetail:[]}}"
+             w-head="[{value:掲示番号,width:100},{value:タイトル,width:650},{value:作成者,width:150},{value:作成日時,width:150}]"
+             w-body="[{column:ROW_ID,width:100},{column:title,width:650},{column:userName,width:150},{column:upddttm,width:150}]"
+
+        ></div>
+
+        <div
+                w-type="Label" w-left="10" w-right="" w-top="10" w-bottom="" w-width="116" w-height="26"
+                w-auth="enable" w-value="日付"
+        ></div>
+
+        <div
+                w-type="DateField" w-left="130" w-right="" w-top="10"  w-width="120" w-height="26"
+                w-id="strDt" w-auth="enable"
+        ></div>
+
+        <div
+                w-type="Text" w-left="250" w-right="" w-top="10" w-bottom="" w-width="" w-height="26"
+                w-id="" w-auth="enable" w-value="～"
+        ></div>
+
+        <div
+                w-type="DateField" w-left="266" w-right="" w-top="10" w-bottom="" w-width="120" w-height="26"
+                w-id="endDt" w-auth="enable"
+        ></div>
+
+        <div
+                w-type="ComboBox" w-left="10" w-right="" w-top="40" w-width="116" w-height="26"
+                w-id="comboBox" w-auth="enable" w-value="title"
+                w-keyField="key" w-dataField="data" w-nullable="false"
+                w-list="[{key:title,data:タイトル},{key:message,data:内容},{key:userName,data:作成者}]"
+        ></div>
+
+        <div
+                w-type="TextField" w-left="130" w-right="" w-top="40" w-bottom="" w-width="256" w-height="26"
+                w-id="textField" w-auth="enable"
+        ></div>
+
+        <div w-type="Button" w-left="" w-right="20" w-top="10" w-bottom="" w-width="116" w-height="46"
+             w-id="searchBtn" w-auth="enable" w-value="検索" w-ime="" w-mode=""
+             w-event="{click:{process:run,compsType:all,compsDetail:[],datasDetail:[]}}"
+        ></div>
+
+        <div w-type="Button" w-left="" w-right="20" w-top="80" w-bottom="" w-width="116" w-height="46"
+             w-id="newBtn" w-auth="enable" w-value="登録"
+             w-event="{click:{process:run,compsType:custom,compsDetail:[searchBtn],datasDetail:[]}}"
+        ></div>
+
+    </div>
+    </body>
+</html>
