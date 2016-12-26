@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>file upload</h3>
+<p>select file to upload</p>
+<form action="upload.jsp" method = "post" enctype = "multipart/form-data">
+	<table>
+		<tr>
+			<td>title</td>
+			<td><input type = "text" name = "subject"/></td>
+		</tr>
+		<tr>
+			<td>file name: </td>
+			<td><input type = "file" name = "file1"/></td>
+		</tr>
+		<tr>
+			<td>file name: </td>
+			<td><input type = "file" name = "file2"/></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type = "submit"/><input type = "reset"/></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
