@@ -52,7 +52,9 @@ public class ForLeaveServlet extends HttpServlet {
         // use utility class to wrap zk in servlet request and
         // get access and response result
         JsonUpdateBridge bridge = new JsonUpdateBridge(getServletContext(), request, response, desktopId) {
-            @Override
+        	
+        	
+        	@Override
             protected void process(Desktop desktop) {
                 Spreadsheet ss = (Spreadsheet)desktop.getComponentByUuidIfAny(zssUuid);
                 System.out.println("ss: " + ss);
@@ -80,7 +82,6 @@ public class ForLeaveServlet extends HttpServlet {
         
         Writer w = response.getWriter();
         w.append(result.toJSONString());
-        
     }
     
     public void doExport(Spreadsheet ss) throws IOException {

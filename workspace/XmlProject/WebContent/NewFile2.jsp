@@ -86,14 +86,18 @@ function postAjax(action){
     // sparedsheet tag 
     var desktopId = zssjsp[action].desktopId; 
     var zssUuid = zssjsp[action].uuid;
-     
+    
+    console.log(desktopId);
+    console.log(zssUuid);
+    
     /*use jquery api to post ajax to your servlet (in this 
     demo, it is AjaxBookServlet), provide desktop id 
     and spreadsheet uuid to access zk component 
     data in your servlet */
     jq.ajax({url:"app4l",//the servlet url
         data:{desktopId:desktopId,zssUuid:zssUuid,action:action},
-        type:'POST',dataType:'json'}).done(handleAjaxResult);
+        type:'POST',
+        dataType:'json'}).done(handleAjaxResult);
 }
 
 //the method to handle ajax result from your servlet 
@@ -111,7 +115,7 @@ function compareAjax(action){
     var zssUuid2 = zssjsp["myzss2"].uuid;
     
     jq.ajax({url:"xmlCompare",//the servlet url
-        data:{desktopId:desktopId,zssUuid:zssUuid,action:action},
+        data:{desktopId:desktopId,zssUuid:zssUuid,action:action,desktopId2:desktopId2,zssUuid2:zssUuid2},
         type:'POST',dataType:'json'}).done(styleAjaxResult);
 }
 
